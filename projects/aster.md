@@ -14,6 +14,12 @@ Aster combines that conversational entry point with a detailed CRM. The initial 
 
 <img src="../media/aster-chat.png" alt="Actual model-generated response explaining a service and asking a relevant follow-up question" width="100%">
 
+## From conversation to a recorded order
+
+In the captured service-catalog scenario, the assistant explains the offer, collects the request for two menu layouts, creates an order for **7,000 RUB** and presents the matching invoice. The customer view and CRM records are shown together, so the result is visible beyond the assistant's reply.
+
+<img src="../media/aster-order-invoice.png" alt="Customer conversation alongside the recorded order for two items and its matching 7000 RUB invoice" width="100%">
+
 ## Engineering focus
 
 - Separate conversational intent from the authority to change business records.

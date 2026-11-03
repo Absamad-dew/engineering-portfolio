@@ -22,6 +22,7 @@ Each linked source repository owns its tests, installation instructions, CI work
 
 ## Media provenance
 
+- `aster-order-invoice.png`: captured from the same isolated version 0.54 customer flow, showing the order and matching invoice; synthetic records and no real payment.
 - `aster-workspace.png` and `aster-chat.png`: captured from the author's Aster application, version 0.54 presentation assets. Synthetic business data; the customer response was model-generated. These screenshots may show a slightly earlier UI than the 0.55 verification snapshot.
 - `engineering.svg`: original vector artwork for this portfolio, with no external assets.
 - No stock photos, third-party music, cloned Halper branding, session cookies or private research illustrations are included.
