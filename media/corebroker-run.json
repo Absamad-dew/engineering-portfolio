@@ -1,0 +1,41 @@
+{
+  "event": "completed",
+  "leaseId": "7519eee5-aa2e-44c7-b097-6741df3f766a",
+  "project": "github-portfolio",
+  "exclusive": false,
+  "physicalCores": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14
+  ],
+  "logicalCpus": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "l3Indices": [
+    0
+  ],
+  "affinityMask": "0x000000000000FFFF",
+  "exitCode": 0,
+  "elapsedMs": 1515.1970999999999,
+  "observation": "Actual CoreBroker completion receipt, portfolio test run, 2026-11-03. Curated projection; no unrelated process data."
+}
