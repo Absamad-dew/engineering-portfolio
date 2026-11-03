@@ -1,6 +1,6 @@
 # Earlier business automation: enquiries, production preparation and customer feedback
 
-I developed and introduced operational tools for **three related businesses with around 15 people in total**. The work covered customer enquiries, CRM, production-file preparation and checking customer artwork. I worked with the manager and business lead, built the tools, explained how to use them and revised them around the actual workflow.
+I worked with **three related businesses with around 15 people in total** from **2018 to 2026**. I developed and introduced tools for production-file preparation and artwork checks, then expanded the automation to customer enquiries, pricing and CRM. I worked with the manager and business lead, explained how to use the tools and revised them around the actual workflow.
 
 ## 1. Customer enquiries connected to pricing and CRM
 
@@ -43,7 +43,7 @@ That experience made adoption part of delivery: the tool had to fit the work, be
 <details>
 <summary>Кратко по-русски</summary>
 
-Разрабатывал и внедрял инструменты для трёх связанных компаний, около 15 человек суммарно. Согласовывал задачи с менеджером и руководителем, реализовывал решения, объяснял работу и дорабатывал по обратной связи. Численность группы не означает, что каждым инструментом пользовались все 15 человек.
+В 2018–2026 годах работал с тремя связанными компаниями, около 15 человек суммарно. Разрабатывал инструменты подготовки производства и проверки макетов, затем расширил автоматизацию на обращения, расчёт цены и CRM. Согласовывал задачи с менеджером и руководителем, объяснял работу и дорабатывал инструменты по обратной связи.
 
 **Обращения и CRM.** Раньше вручную следил за перепиской и отвечал по шаблонам. Связал контекст собственных сообщений, условия клиента, существующий калькулятор и CRM. Система готовила ответ и действие, которое я подтверждал, отклонял или редактировал. По моей оценке, первый ответ ускорился с периода до часа примерно до двух минут; меньше приходилось отвлекаться на входящие. Количественный прирост заказов не фиксировался.
 
