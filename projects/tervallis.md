@@ -8,6 +8,8 @@ Tervallis keeps projects, tasks, experiments, decisions, discussions, files and 
 
 A request starts in a project discussion. An agent receives the event through an MCP integration, claims the work, performs the task and returns its result to the same project context. The discussion, task and result remain available for the next worker.
 
+**The product decision:** make the project the durable context for delegation. A handoff can then be checked against its request, task and saved result, and the next worker can continue from that state.
+
 The retained end-to-end check covered this complete cycle for **one research project**:
 
 ```text
@@ -37,6 +39,8 @@ The integration treats a claimed task and a saved result as operations to verify
 | A worker encounters an error or requests an unintended action | Failure handling and allowed-action boundaries are part of the integration design. |
 
 These decisions make the platform useful as a continuing workspace for agent-assisted work: delegation ends with a recorded result that can be found and checked. The source, internal MCP implementation and project data remain private; this case describes the working product and the scenarios verified by its author.
+
+[Decision story: a repeatable project handoff](../docs/decision-stories.md#3-tervallis-preserve-the-work-item-across-handoffs) separates the design rationale from the retained checks. The 20-agent figure describes how I organized work; it is not a simultaneous-load measurement.
 
 <details>
 <summary>Кратко по-русски</summary>

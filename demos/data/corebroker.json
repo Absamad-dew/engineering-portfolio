@@ -1,0 +1,219 @@
+{
+  "schema_version": 1,
+  "demo_id": "corebroker",
+  "title": "Replay a recorded resource-coordination demonstration",
+  "evidence_kind": "actual curated local black-box trace; replay is display animation",
+  "captured_utc": "2026-11-03T13:49:52.176467+00:00",
+  "sources": [
+    {
+      "id": "coordination-trace",
+      "repository": "Absamad-dew/engineering-portfolio",
+      "revision": "e2b630dcc3a8bf92e03d4ca7624cb2f42b981cf5",
+      "path": "media/corebroker-coordination.json",
+      "url": "https://github.com/Absamad-dew/engineering-portfolio/blob/e2b630dcc3a8bf92e03d4ca7624cb2f42b981cf5/media/corebroker-coordination.json",
+      "source_commit_date": "2026-11-03T17:23:09+03:00",
+      "sha256": "91a923b568179f79dc4023fd90dfe53f43144ac04853d51a419a764447b793d5",
+      "checksum_scope": "exact public Git blob bytes; SHA-256, not Git SHA-1"
+    },
+    {
+      "id": "coordination-notes",
+      "repository": "Absamad-dew/engineering-portfolio",
+      "revision": "e2b630dcc3a8bf92e03d4ca7624cb2f42b981cf5",
+      "path": "docs/corebroker-demonstration.md",
+      "url": "https://github.com/Absamad-dew/engineering-portfolio/blob/e2b630dcc3a8bf92e03d4ca7624cb2f42b981cf5/docs/corebroker-demonstration.md",
+      "source_commit_date": "2026-11-03T17:23:09+03:00",
+      "sha256": "7934dd05d618d211b03ac597fc96b8283a225b274f490a17abc19a9fca1dc552",
+      "checksum_scope": "exact public Git blob bytes; SHA-256, not Git SHA-1"
+    }
+  ],
+  "conditions": {
+    "project": "github-portfolio",
+    "requested_physical_cores": 1,
+    "exclusive": false,
+    "power_profile": null,
+    "worker": "synthetic SHA256 marker plus four-second resource hold; not a throughput benchmark"
+  },
+  "implementation_revision": null,
+  "implementation_revision_status": "private implementation is not included or identified by the public document revision",
+  "scenarios": [
+    {
+      "shared_lock": null,
+      "overlap_ms": 3086.547,
+      "jobs": [
+        {
+          "label": "A",
+          "submitted_ms": 0.023,
+          "started_ms": 838.662,
+          "finished_ms": 4839.452,
+          "lease_id": "ce85a87f-cf9c-4427-8caa-174c6108ae02",
+          "physical_cores": [
+            0
+          ],
+          "logical_cpus": [
+            0,
+            1
+          ],
+          "l3_indices": [
+            0
+          ],
+          "exclusive": false,
+          "exit_code": 0,
+          "worker_sha256": "3b044271dfa94c1a4fd47dd92da6eb5c4237f86d3e8182f05627ef8ad1bcf9eb",
+          "duration_ms": 4000.79,
+          "submission_to_start_ms": 838.639,
+          "timing_scope": "observed worker-marker interval inside a managed lease"
+        },
+        {
+          "label": "B",
+          "submitted_ms": 865.57,
+          "started_ms": 1752.905,
+          "finished_ms": 5754.147,
+          "lease_id": "a7a1391f-7757-49ed-a60d-24f5de6f7120",
+          "physical_cores": [
+            2
+          ],
+          "logical_cpus": [
+            2,
+            3
+          ],
+          "l3_indices": [
+            0
+          ],
+          "exclusive": false,
+          "exit_code": 0,
+          "worker_sha256": "3ad53a79e41e4b13e56219e7d5f94ee08029aa42d6d28413c33a174d69405355",
+          "duration_ms": 4001.242,
+          "submission_to_start_ms": 887.335,
+          "timing_scope": "observed worker-marker interval inside a managed lease"
+        }
+      ],
+      "id": "independent",
+      "label": "Independent workers",
+      "source_ids": [
+        "coordination-trace",
+        "coordination-notes"
+      ],
+      "timeline_start_ms": 0,
+      "timeline_end_ms": 5754.147,
+      "overlap_derivation": "max(0, min(worker finishes) - max(worker starts))"
+    },
+    {
+      "shared_lock": "portfolio-demo-resource",
+      "overlap_ms": 0,
+      "jobs": [
+        {
+          "label": "A",
+          "submitted_ms": 0.007,
+          "started_ms": 897.069,
+          "finished_ms": 4897.706,
+          "lease_id": "e36d9477-6332-4ad8-916e-1a8dca515445",
+          "physical_cores": [
+            0
+          ],
+          "logical_cpus": [
+            0,
+            1
+          ],
+          "l3_indices": [
+            0
+          ],
+          "exclusive": false,
+          "exit_code": 0,
+          "worker_sha256": "67d1c22c55d3a1b5f5cd50a4565dc69abc4c1b901f1fac819b21ee5f168c6755",
+          "duration_ms": 4000.637,
+          "submission_to_start_ms": 897.062,
+          "timing_scope": "observed worker-marker interval inside a managed lease"
+        },
+        {
+          "label": "B",
+          "submitted_ms": 918.86,
+          "started_ms": 5900.548,
+          "finished_ms": 9901.558,
+          "lease_id": "dd5f8aa9-49e5-4342-87f5-73f24efe7f8f",
+          "physical_cores": [
+            0
+          ],
+          "logical_cpus": [
+            0,
+            1
+          ],
+          "l3_indices": [
+            0
+          ],
+          "exclusive": false,
+          "exit_code": 0,
+          "worker_sha256": "d24c76421363aa4a738ce908008f2f223cb0b1098de8f738c82f9a14aa408f4a",
+          "duration_ms": 4001.01,
+          "submission_to_start_ms": 4981.688,
+          "timing_scope": "observed worker-marker interval inside a managed lease"
+        }
+      ],
+      "id": "shared-resource",
+      "label": "Workers sharing one resource lock",
+      "source_ids": [
+        "coordination-trace",
+        "coordination-notes"
+      ],
+      "timeline_start_ms": 0,
+      "timeline_end_ms": 9901.558,
+      "overlap_derivation": "max(0, min(worker finishes) - max(worker starts))"
+    }
+  ],
+  "result_statements": [
+    {
+      "id": "independent-overlap",
+      "text": "Independent workers overlapped for 3086.547 ms with disjoint physical-core and logical-CPU assignments.",
+      "scenario_ids": [
+        "independent"
+      ],
+      "source_ids": [
+        "coordination-trace",
+        "coordination-notes"
+      ]
+    },
+    {
+      "id": "shared-lock",
+      "text": "With the same resource lock, worker B was submitted before A finished and started after A finished: zero worker overlap.",
+      "scenario_ids": [
+        "shared-resource"
+      ],
+      "source_ids": [
+        "coordination-trace",
+        "coordination-notes"
+      ]
+    },
+    {
+      "id": "bounded-conclusion",
+      "text": "All four recorded jobs completed with exit code 0. This demonstrates these allocation/lock outcomes; worker holds and replay speed do not measure throughput or machine-wide isolation.",
+      "scenario_ids": [
+        "independent",
+        "shared-resource"
+      ],
+      "source_ids": [
+        "coordination-trace",
+        "coordination-notes"
+      ]
+    }
+  ],
+  "replay_policy": {
+    "animation_kind": "deterministic display of recorded markers; no live work is launched",
+    "clock": "one host monotonic performance counter; each scenario has its own zero origin",
+    "unit": "milliseconds",
+    "interval_convention": "[start, finish)",
+    "display_time_mapping": "recorded_ms = wall_clock_playback_elapsed_ms * selected_playback_rate",
+    "pending_interval": [
+      "submitted_ms",
+      "started_ms"
+    ],
+    "pending_label": "submitted / waiting for worker start",
+    "pending_caveat": "includes coordinator startup and handoff; not pure queue latency",
+    "worker_interval": [
+      "started_ms",
+      "finished_ms"
+    ],
+    "cpu_ids": "topology allocation identifiers, not utilization percentages",
+    "playback_speed_changes_evidence": false,
+    "interpolate_execution_or_resource_assignments": false,
+    "worker_sha256_scope": "published marker digests copied exactly; preimage data is not in this public artifact"
+  }
+}

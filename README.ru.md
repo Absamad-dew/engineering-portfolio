@@ -1,5 +1,7 @@
 # Абсамад Мантуров — основные инженерные работы
 
+[Посмотреть интерактивные демо](https://absamad-dew.github.io/engineering-portfolio/demos/#project=aster&lang=ru) · [Решения и проверки](https://github.com/Absamad-dew/engineering-portfolio/blob/main/docs/decision-stories.md) · [Хронология разработки](https://github.com/Absamad-dew/engineering-portfolio/blob/main/docs/working-with-agents.md#dated-artifacts)
+
 Создаю автономные системы для бизнеса и инструменты для эффективной организации вычислений. Здесь собраны продукты, собственные исследования и технические решения, которые определяют мою работу.
 
 [Профиль GitHub](https://github.com/Absamad-dew) · [English](README.md) · [Почта](mailto:absamad.manturov@gmail.com) · [Telegram](https://t.me/Absamad_m)

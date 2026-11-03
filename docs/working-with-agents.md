@@ -1,32 +1,55 @@
 # How I build with agents
 
-I use agents for implementation, investigation and verification. My responsibility is to turn that work into one coherent product: define its behavior, make system-level decisions, coordinate ownership, integrate the parts and accept the result against observable outcomes.
+I use agents for implementation, investigation and verification. I own the product behavior, system-level decisions, ownership boundaries, integration and acceptance. [Five decision stories](decision-stories.md) show what that responsibility means in the work itself: a recorded order, a delivery receipt, a saved agent result, a resource constraint and a concurrency regression.
 
-## Start with the complete user outcome
+## Define the result before dividing the work
 
-A useful slice connects the interface to the result it promises. In Aster that means following a customer request through service and quantity clarification into a recorded order and its matching invoice. The first prototype took two days; later work expanded the operating workspace and exercised cancellations, booking changes and commercial exceptions.
+A useful slice connects the interface to the result it promises. In Aster, that means a customer request becomes an order for the correct quantity and a matching invoice with an explicit payment state. The [actual capture](../media/aster-order-invoice.png) shows the conversation and saved records together.
 
-I define the acceptance condition before delegating implementation. For a business action it is the resulting record and state transition. For a video pipeline it includes frames, timestamps and resource lifetime. For compression it includes the exact reconstructed bytes alongside size and processing time.
+I define the acceptance condition before delegating implementation. For a business action it is the record and state transition. For a video pipeline it includes frames, timestamps and resource lifetime. For compression it includes exact reconstructed bytes alongside size and processing time.
 
-## Divide ownership, then integrate
+I built the first Aster prototype in two days. Subsequent iterations expanded the operating workspace and exercised cancellations, booking changes, access boundaries and commercial exceptions. The product case shows the prototype timeline alongside the later captured builds and verification.
 
-Parallel work gets explicit file/subsystem ownership and an agreed interface. Product behavior, execution boundaries, interface work and verification can progress independently while referring to the same requested outcome. Integration checks the handoffs rather than treating each worker's completion as product completion.
+## Divide ownership, then inspect the handoffs
 
-Tervallis provides persistent project discussions, tasks and result history around this workflow. CoreBroker coordinates the heavy stages so agents declare CPU allocation and shared-resource constraints. [Actual resource-coordination demonstration](../projects/corebroker.md).
+Parallel work has explicit file or subsystem ownership and an agreed interface. Product behavior, execution boundaries, interface work and verification can progress independently against the same requested outcome. Integration checks whether their handoffs preserve that outcome.
 
-## Review where a mistake becomes consequential
+Tervallis supplies persistent project discussions, tasks and result history. I organized work across 20 agents with different responsibilities; the retained complete event/claim/work/result check covers one project. CoreBroker coordinates heavy stages with declared CPU allocations and shared-resource constraints. Its [actual demonstration](../projects/corebroker.md) makes the difference between independent and shared-resource jobs visible.
 
-| System | The important decision |
+## Make the consequential decisions reviewable
+
+| Work | Decision and acceptance evidence |
 |---|---|
-| Aster | Connect a reply to the correct customer/order; separate issuing an invoice from a payment event; route exceptional commercial terms to staff. |
-| CoreBroker | Preserve physical-core/SMT allocation and resource-lock behavior across waiting, execution and completion. |
-| Video Studio | Keep GPU resources alive until their owner completes; separate producer acknowledgement, GPU fences and playback time. |
-| ChronoField | Compare the same exact inputs and keep corpus, baseline and measurement boundaries with the result. |
+| Aster | Keep the order, invoice, payment and delivery states explicit; read back the saved result and preserve failed turns. [Business outcome and receipt decisions](decision-stories.md#1-aster-accept-the-business-record) |
+| Tervallis | Preserve the work item across project/agent handoffs; check repeated creation, stored results and transferred files. [Handoff decision](decision-stories.md#3-tervallis-preserve-the-work-item-across-handoffs) |
+| CoreBroker | Model CPU capacity and named shared-resource constraints separately. [Observed coordination](decision-stories.md#4-corebroker-separate-cpu-capacity-from-a-shared-resource-constraint) |
+| Public executor | Make cache lookup, execution and commit one serialized boundary. [Source and concurrent-call regressions](decision-stories.md#5-public-tool-executor-serialize-the-whole-state-changing-boundary) |
 
-These decisions determine what to inspect and test. Retained failures are useful inputs for the next iteration: an observed defect should become a reproducing check, with a verified result after the change.
+Recorded observations and design rationale answer different questions. A screenshot can show the order and invoice that exist in that capture; the v0.55 report describes a later checked build. A scheduling trace can show worker overlap; it does not measure throughput improvement. A reproducing regression can establish a particular concurrency fix without establishing reliability outside its contract.
 
-## Make the result reviewable
+## Dated artifacts
 
-The public work includes actual product captures, a recorded scheduling trace, source-linked native engineering notes and approved research comparisons. The supplementary libraries expose narrower reliability checks as runnable code: concurrent-call regressions, crash/reconciliation behavior and tool outcomes checked against reopened state.
+| Recorded UTC date/time | Inspectable record | What it establishes |
+|---|---|---|
+| 2026-07-15 | [Structured-output provenance implementation](https://github.com/Absamad-dew/ruagent-compat/commit/9916db3af3deccbfd93b7ef98080aee9612cb0d6) | An earlier public-code revision already addressed the provenance of structured model output. |
+| 2026-09-02–04 | [Video Studio decisions and commits](https://github.com/Absamad-dew/dlss5-video-studio/blob/main/docs/DECISION_TIMELINE.md) | Public revisions show audio timing, bounded frame transport and direct NVENC work on successive dates, with separate retained performance comparisons. |
+| 2026-11-03, 12:33:13 | [Initial engineering-portfolio revision](https://github.com/Absamad-dew/engineering-portfolio/commit/5e73942650d3d05a9907493751a368a0c5a4d8d5) | Product descriptions and supporting evidence were committed to the public portfolio history. |
+| 2026-11-03, 12:33:14 | [Executor concurrency fix](https://github.com/Absamad-dew/ruagent-compat/commit/204ca9a9ddd304132a9b1567f7c5855f5a9d3e2e) | A specific implementation change and its two reproducing regression tests are reviewable together. |
+| 2026-11-03, 12:42:40 | [Order/invoice capture added](https://github.com/Absamad-dew/engineering-portfolio/commit/f8169215481787402eb16a11033377ca46d73284) | The actual customer/CRM result became part of the committed case. This is a revision date, not the image's capture time. |
+| 2026-11-03, 13:49:52 | [CoreBroker observation](../media/corebroker-coordination.json) | The artifact records this capture time for the four-worker coordination demonstration. |
+| 2026-11-03, 14:23:09 | [Flagship case revision](https://github.com/Absamad-dew/engineering-portfolio/commit/e2b630dcc3a8bf92e03d4ca7624cb2f42b981cf5) | Product demonstrations and the approved research results were brought together in a later portfolio revision. |
 
-Private application source and research mechanisms are kept separate from the descriptions, demonstrations and measurements cleared for public sharing. [Sources and scope](evidence.md).
+Git timestamps date the revisions in the available public history; they do not independently establish push time or the beginning and duration of private development. The two-day prototype estimate and the product checks are identified by their own evidence type.
+
+Private application source and research mechanisms remain separate from public descriptions, demonstrations and measurements. [Sources and demonstration records](evidence.md).
+
+<details>
+<summary>Кратко по-русски</summary>
+
+Я использую агентов для реализации, исследования и проверки. Моя ответственность — определить поведение продукта, принять системные решения, разделить владение работой, интегрировать результат и проверить наблюдаемые изменения.
+
+В Aster принимается заказ и соответствующий счёт с явным состоянием оплаты; в Tervallis — сохранённый результат, который можно прочитать обратно; в CoreBroker — конкретное выделение ресурсов и поведение общего lock. В публичном executor граница конкурентного изменения подтверждается регрессиями. [Пять решений и их проверки](decision-stories.md).
+
+Первый прототип Aster я сделал за два дня. Затем развивал рабочее пространство, интеграции и надёжность; последующие результаты показаны в снимках и проверке v0.55. Таблица даёт датированные публичные артефакты, а описание Tervallis показывает, как я организовал работу 20 агентов.
+
+</details>

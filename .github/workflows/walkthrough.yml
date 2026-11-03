@@ -1,0 +1,51 @@
+name: Publish interactive walkthrough
+
+on:
+  push:
+    branches: [main]
+    paths: ['demos/**', 'media/aster-*.png', 'scripts/build_demo.py', 'scripts/check_demo.cjs', 'scripts/serve_demo.py', '.github/workflows/walkthrough.yml', 'NOTICE.md']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.13'
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+      - name: Check recorded data and interaction calculations
+        run: node scripts/check_demo.cjs
+      - name: Build only approved walkthrough assets
+        run: python scripts/build_demo.py --output .site
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: .site
+      - uses: actions/upload-artifact@v4
+        with:
+          name: offline-walkthrough
+          path: engineering-walkthrough-offline.zip
+  deploy:
+    needs: build
+    runs-on: ubuntu-24.04
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy verified static files
+        id: deployment
+        uses: actions/deploy-pages@v4

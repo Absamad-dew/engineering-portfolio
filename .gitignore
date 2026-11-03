@@ -4,3 +4,6 @@ Thumbs.db
 .env
 *.db
 *.sqlite*
+.site/
+.artifacts/
+/engineering-walkthrough-offline.zip

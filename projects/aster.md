@@ -10,6 +10,8 @@ A customer asks about a café menu layout. Aster explains the service and its **
 
 The demonstration shows both sides together: the customer response on the left and the resulting CRM order and invoice on the right. The invoice is **awaiting payment**; creating or presenting it does not mark it paid.
 
+**The decision to inspect:** the conversation can initiate a sale, but the accepted result is the matching business record. Compare the quantity, total and payment status across the two sides of the capture.
+
 <img src="../media/aster-order-invoice.png" alt="Aster's running customer interface: two menu layouts, a 7000 RUB order and a matching invoice awaiting payment, alongside CRM state" width="100%">
 
 *Actual application capture with synthetic business records, presentation build 0.54. The service explanation shown in the [earlier conversation capture](../media/aster-chat.png) is a real model response.*
@@ -39,11 +41,13 @@ The retained v0.55 scenario run exercised the lifecycle beyond an initial sale:
 
 ## 4. Engineering decisions and my approach
 
-I built the initial prototype over two days, then developed the integrated product through successive interface and reliability work. I use agents for implementation and investigation; I own the product behavior, system boundaries, integration and the decision to accept a result.
+By my own account, the first prototype took two days. The operating workspace and v0.55 verification reflect later iterations; the two-day estimate does not time the current feature set. I use agents for implementation and investigation; I own the product behavior, system boundaries, integration and the decision to accept a result.
 
 The central acceptance question is whether the business records match the conversation. In the v0.55 verification, all **40 existing presentation conversations** were completed and read back through the authorized API, with an actual model response in every conversation. Failed intermediate turns remained in the history after successful continuation. Delivery claims also remain tied to receipts: an earlier invoice handoff cannot justify claiming a new delivery.
 
 The same work covered tenant and staff access boundaries, history preservation and the customer interface at desktop and mobile widths. [Verification scope and selected results](../docs/aster-verification.md) keep the build-specific evidence separate from the product walkthrough.
+
+[Two concrete Aster decisions](../docs/decision-stories.md#1-aster-accept-the-business-record) explain the acceptance boundary and why failed turns and delivery receipts remain part of the result. [Working with agents](../docs/working-with-agents.md) connects that judgment to ownership, integration and the dated public artifacts.
 
 **Demonstration scope:** synthetic business data in a running local application; external channels and bank events use local adapters. The v0.55 run used text, with no real customers, charges or physical microphone. Product source and runtime data remain private.
 
@@ -55,6 +59,8 @@ Aster связывает клиентский диалог с операцион
 На реальном скриншоте приложения клиент заказывает два макета по 3 500 ₽: рядом с перепиской видны заказ и счёт на 7 000 ₽ со статусом ожидания оплаты. Это результат в бизнес-записях, а не только фраза ассистента.
 
 Моя роль — постановка продукта, системные решения, интеграция агентской разработки и приёмка по наблюдаемому состоянию. В проверке v0.55 завершены и повторно сверены через API 40 презентационных бесед; в каждой есть настоящий ответ модели. Проверены также отмены, переносы, исключения и сохранение истории неудачных ходов.
+
+По моей оценке, первый прототип занял два дня. Текущий набор возможностей и проверка v0.55 относятся к последующим итерациям; публичные даты фиксируют публикацию материалов, а не время всей разработки.
 
 Демонстрационные данные синтетические; внешние каналы и банковские события локальные. Реальных клиентов, списаний и физического микрофона в этом прогоне не было. Исходники закрыты.
 

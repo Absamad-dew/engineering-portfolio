@@ -1,5 +1,7 @@
 # Absamad Manturov — selected engineering work
 
+[Explore interactive demos](https://absamad-dew.github.io/engineering-portfolio/demos/) · [Decisions and checks](https://github.com/Absamad-dew/engineering-portfolio/blob/main/docs/decision-stories.md) · [Delivery evidence](https://github.com/Absamad-dew/engineering-portfolio/blob/main/docs/working-with-agents.md#dated-artifacts)
+
 I build autonomous business software and systems for running computational work efficiently. This portfolio brings together the products, original research and engineering decisions behind them.
 
 [Aster](projects/aster.md) · [ChronoField](research/README.md) · [CoreBroker](projects/corebroker.md) · [Video Studio](https://github.com/Absamad-dew/dlss5-video-studio) · [Tervallis](projects/tervallis.md)

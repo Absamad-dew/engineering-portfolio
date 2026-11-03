@@ -25,3 +25,5 @@ The application is server-side rendition families produced through known transfo
 [Measurement tooling: Compression Observatory](https://github.com/Absamad-dew/compression-observatory) · [Back to portfolio](../README.md)
 
 [Other compression research](other-work.md)
+
+[Interactive measurement explorer](https://absamad-dew.github.io/engineering-portfolio/demos/#project=research&lang=en) · [Independent validation brief](VALIDATION_BRIEF.md)
