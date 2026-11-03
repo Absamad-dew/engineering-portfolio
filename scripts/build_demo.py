@@ -64,7 +64,7 @@ def main():
         "Python 3.11+, без установки пакетов, моделей и API-ключей.\n",
         encoding="utf-8", newline="\n")
     files = []
-    for path in sorted(output.rglob("*")):
+    for path in sorted(output.rglob("*"), key=lambda p: p.relative_to(output).as_posix()):
         if path.is_file():
             content = path.read_bytes()
             files.append({"path": path.relative_to(output).as_posix(), "bytes": len(content),
@@ -77,10 +77,11 @@ def main():
     if archive.exists():
         raise SystemExit("Archive already exists; choose another parent directory.")
     with zipfile.ZipFile(archive, "w", compression=zipfile.ZIP_DEFLATED, compresslevel=9) as bundle_zip:
-        for path in sorted(output.rglob("*")):
+        for path in sorted(output.rglob("*"), key=lambda p: p.relative_to(output).as_posix()):
             if path.is_file():
                 entry = zipfile.ZipInfo(path.relative_to(output).as_posix(), date_time=(2026, 11, 3, 0, 0, 0))
                 entry.compress_type = zipfile.ZIP_DEFLATED
+                entry.create_system = 3  # Stable Unix file metadata on Windows and Linux.
                 entry.external_attr = 0o100644 << 16
                 bundle_zip.writestr(entry, path.read_bytes())
     print(json.dumps({"site": str(output), "files": len(files) + 1, "archive": str(archive),
