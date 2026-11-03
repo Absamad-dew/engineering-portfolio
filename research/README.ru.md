@@ -26,4 +26,4 @@
 
 [Другие направления исследований](other-work.md)
 
-[Интерактивные сравнения](https://absamad-dew.github.io/engineering-portfolio/demos/#project=research&lang=ru) · [План независимой проверки](VALIDATION_BRIEF.md)
+[План независимой проверки](VALIDATION_BRIEF.md)

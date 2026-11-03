@@ -1,10 +1,6 @@
 # Sources and demonstration records
 
-## Interactive walkthrough
-
-The [browser walkthrough](https://absamad-dew.github.io/engineering-portfolio/demos/) and its [offline edition](../demos/README.md) use an explicit allowlist of public assets. Aster's images are application captures, CoreBroker animates recorded worker markers, research charts display separately published measurements, and Video Studio/Tervallis use explanatory views. No browser interaction starts a private product, makes a model call or executes research software. Each view links to its supporting case or source; the archive carries a SHA-256 file manifest.
-
-[Decision stories](decision-stories.md) connect the author's judgment to observed results. [Dated artifacts](working-with-agents.md#dated-artifacts) link actual revisions; the two-day initial Aster prototype remains an author-reported duration. [Independent research validation brief](../research/VALIDATION_BRIEF.md) describes a proposed external check, not a completed independent result.
+[Technical decisions](decision-stories.md) and [dated artifacts](working-with-agents.md#dated-artifacts) connect the case studies to implementation choices and retained results.
 
 ## Aster
 
@@ -39,3 +35,7 @@ The linked action ledger, eval kit, compatibility library, standard-codec benchm
 ## Media
 
 All product captures and vector diagrams are the author's original materials. The original generic `engineering.svg` cover remains in repository history/media, but the new entry point leads with product output. No third-party music, stock photos, session data, private research illustrations or Halper branding are included.
+
+## Supplementary presentation materials
+
+The `demos/` directory preserves an earlier static presentation snapshot. Its data records use the same public measurements and approved application captures documented above. It contains no private product or research implementation.
