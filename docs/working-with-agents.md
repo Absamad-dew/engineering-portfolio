@@ -1,24 +1,32 @@
-# Agent-assisted engineering
+# How I build with agents
 
-I use agents extensively to build products and explore research directions. My contribution is defining the problem, choosing the architecture, dividing work, integrating changes and deciding what evidence is sufficient to accept a result.
+I use agents for implementation, investigation and verification. My responsibility is to turn that work into one coherent product: define its behavior, make system-level decisions, coordinate ownership, integrate the parts and accept the result against observable outcomes.
 
-## The working loop
+## Start with the complete user outcome
 
-1. Make the desired user outcome concrete: input, allowed actions, observable result and failure behavior.
-2. Split work by ownership and interfaces. Parallel agents should have independent tasks, not compete to edit the same files.
-3. Build a thin end-to-end path early. Test a real adapter separately from a deterministic simulator.
-4. Review the important boundaries: identity, authority, data shape, concurrency, external effects and recovery.
-5. Verify the resulting state. A model saying “done” is not a receipt.
-6. Keep the failure that exposed the defect and add a regression that reproduces it.
-7. Check the packaged artifact independently from the development checkout.
+A useful slice connects the interface to the result it promises. In Aster that means following a customer request through service and quantity clarification into a recorded order and its matching invoice. The first prototype took two days; later work expanded the operating workspace and exercised cancellations, booking changes and commercial exceptions.
 
-## Concrete examples in the public work
+I define the acceptance condition before delegating implementation. For a business action it is the resulting record and state transition. For a video pipeline it includes frames, timestamps and resource lifetime. For compression it includes the exact reconstructed bytes alongside size and processing time.
 
-- Concurrent identical tool calls originally entered a handler eight times. A reproducing regression now checks one dispatch and correct committed state in `ruagent-compat`.
-- A process can die after a local service commits an effect. `agent-action-ledger` tests an actual subprocess exit and reconciles durable evidence without dispatching the action again.
-- An eval should inspect state after reopening storage. `ru-agent-eval-kit` records observed effects, protocol errors and model provenance separately.
-- A benchmark should verify every decompressed output before reporting speed. `compression-observatory` keeps raw observations and explicit aggregate definitions.
+## Divide ownership, then integrate
 
-## Ownership
+Parallel work gets explicit file/subsystem ownership and an agreed interface. Product behavior, execution boundaries, interface work and verification can progress independently while referring to the same requested outcome. Integration checks the handoffs rather than treating each worker's completion as product completion.
 
-Agents accelerate implementation and investigation. They do not transfer responsibility for architecture, disclosure, claims or acceptance. The repository history reflects when work was actually committed; it is not backdated to simulate years of public activity.
+Tervallis provides persistent project discussions, tasks and result history around this workflow. CoreBroker coordinates the heavy stages so agents declare CPU allocation and shared-resource constraints. [Actual resource-coordination demonstration](../projects/corebroker.md).
+
+## Review where a mistake becomes consequential
+
+| System | The important decision |
+|---|---|
+| Aster | Connect a reply to the correct customer/order; separate issuing an invoice from a payment event; route exceptional commercial terms to staff. |
+| CoreBroker | Preserve physical-core/SMT allocation and resource-lock behavior across waiting, execution and completion. |
+| Video Studio | Keep GPU resources alive until their owner completes; separate producer acknowledgement, GPU fences and playback time. |
+| ChronoField | Compare the same exact inputs and keep corpus, baseline and measurement boundaries with the result. |
+
+These decisions determine what to inspect and test. Retained failures are useful inputs for the next iteration: an observed defect should become a reproducing check, with a verified result after the change.
+
+## Make the result reviewable
+
+The public work includes actual product captures, a recorded scheduling trace, source-linked native engineering notes and approved research comparisons. The supplementary libraries expose narrower reliability checks as runnable code: concurrent-call regressions, crash/reconciliation behavior and tool outcomes checked against reopened state.
+
+Private application source and research mechanisms are kept separate from the descriptions, demonstrations and measurements cleared for public sharing. [Sources and scope](evidence.md).

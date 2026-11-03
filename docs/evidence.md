@@ -1,32 +1,35 @@
-# Evidence index
+# Sources and demonstration records
 
-## Runnable public work
+## Aster
 
-Each linked source repository owns its tests, installation instructions, CI workflow and recorded artifacts. Check its current Actions result when reviewing a commit.
+The customer, workspace and order/invoice images are actual captures of the author's application, presentation version 0.54, using synthetic business records. The service explanation is a real model response; the order/invoice capture shows the resulting business records alongside the conversation. The business-flow SVG is an original explanatory diagram, not an application screenshot.
 
-| Project | Evidence |
-|---|---|
-| Agent Action Ledger | Thread/process concurrency, crash after effect, durable reconciliation, revocation during I/O and cached replay, standalone CLI demo. |
-| RU Agent Eval Kit | Deterministic execution suite plus a separately recorded actual local Qwen read/write canary; reopened database observation and metadata trace. |
-| ruagent-compat | Tool/schema/protocol checks and concurrency regressions that failed on the preceding release. |
-| Compression Observatory | Exact round trips, weighted size/time accounting, codec failures and an actual measured example with machine metadata. |
-| Price Intelligence | Golden synthetic reports, currency isolation, malformed-row review and fixture-fingerprint checks. |
+The linked [verification note](aster-verification.md) transcribes the retained version 0.55 snapshot, build `122e6f02e626fe68`. It describes that specific private build; source, runtime databases, provider requests and authentication sessions are excluded. External channels and bank events in the presentation use local adapters.
 
-## Closed application snapshots
+## CoreBroker
 
-**Aster:** the product verification figures refer to the retained version 0.55 verification snapshot, build `122e6f02e626fe68`. Regression source fingerprint: `9ca7d570a1dd2d5a30ffa77381d743750c9f6cf432d7ec93bc4fc3afaab8629d`. The screenshots are from the earlier 0.54 presentation build. The test source and raw provider requests are not published; these figures are recorded private-build checks.
+The [coordination observation](../media/corebroker-coordination.json) records four owned jobs captured on 2026-11-03. Its [method note](corebroker-demonstration.md) defines worker timing, resource assignments, explicit shared lock and assertions. The SVG is drawn from the recorded numbers. No unrelated jobs or machine-wide history are included. The older [single-run receipt](../media/corebroker-run.json) remains available as historical supporting evidence.
 
-**CoreBroker:** `media/corebroker-run.json` is a curated actual completion receipt for this portfolio's test job. It excludes unrelated jobs, user paths and machine-wide history.
+## Video Studio
 
-**Tervallis:** the case study reflects the author's working platform and retained scenario checks. Private project data and research outputs are not included.
+The [public project](https://github.com/Absamad-dew/dlss5-video-studio) owns its code, measurements and validation notes. Its new engineering overview links to stable source lines in the already-public implementation. The portfolio publishes no user video, proprietary runtime or private research source.
 
-## Media provenance
+## ChronoField and other research
 
-- `aster-order-invoice.png`: captured from the same isolated version 0.54 customer flow, showing the order and matching invoice; synthetic records and no real payment.
-- `aster-workspace.png` and `aster-chat.png`: captured from the author's Aster application, version 0.54 presentation assets. Synthetic business data; the customer response was model-generated. These screenshots may show a slightly earlier UI than the 0.55 verification snapshot.
-- `engineering.svg`: original vector artwork for this portfolio, with no external assets.
-- No stock photos, third-party music, cloned Halper branding, session cookies or private research illustrations are included.
+All numerical research claims and graph inputs come from the existing public ChronoField [README](https://github.com/Absamad-dew/chronofield-investor-materials/blob/e29488e2d1d4932bc94957d0d0c8ac60fff4b4e5/README.md) and [competitive note](https://github.com/Absamad-dew/chronofield-investor-materials/blob/e29488e2d1d4932bc94957d0d0c8ac60fff4b4e5/COMPETITIVE_POSITION.md). The Full-HD comparison and rendition-family experiment have separate populations and normalizations. [Research case](../research/README.md).
 
-## Research provenance
+The [other-work index](../research/other-work.md) names research domains supplied by the author: structured text/PTC, model weights, KV cache and video. It adds no unpublished numerical ranking or implementation mechanism.
 
-All numerical ChronoField claims here are drawn from the existing public [ChronoField overview at revision 4d45982](https://github.com/Absamad-dew/chronofield-investor-materials/blob/4d45982819c7f0cca397dc834c53159c7ac31092/README.md). No private implementation was used to create this repository.
+## Tervallis and professional background
+
+The Tervallis description uses the author's curated working-platform account: project context, organization of 20 agents, MCP handoffs, versioned tasks, idempotent creation, read-back and checksum checks. The complete event/claim/work/result cycle was checked for one research project. No research task content or internal MCP code is included.
+
+The professional background statement about three related businesses and approximately 15 people was supplied directly by the author. It is distinct from the personal product demonstrations above.
+
+## Additional public code
+
+The linked action ledger, eval kit, compatibility library, standard-codec benchmark and supplier-price example own their installation instructions, tests and CI. Their executable fixtures and actual provider runs are labelled in their repositories.
+
+## Media
+
+All product captures and vector diagrams are the author's original materials. The original generic `engineering.svg` cover remains in repository history/media, but the new entry point leads with product output. No third-party music, stock photos, session data, private research illustrations or Halper branding are included.

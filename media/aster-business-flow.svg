@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1360" height="590" viewBox="0 0 1360 590" role="img" aria-labelledby="title desc">
+  <title id="title">Aster business flow: customer request to verified records</title>
+  <desc id="desc">A customer request is clarified using the service catalog and customer context. Allowed standard operations create or update orders, invoices and bookings in the CRM. Exceptional discounts and refunds become staff tasks. Saved records are read back to verify the outcome.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L8 5 L1 9" fill="none" stroke="#7258b2" stroke-width="2"/></marker>
+    <marker id="reviewArrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L8 5 L1 9" fill="none" stroke="#a97826" stroke-width="2"/></marker>
+  </defs>
+  <rect width="1360" height="590" rx="22" fill="#f8f7fc"/>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <text x="44" y="58" font-size="32" font-weight="700" fill="#292236">Aster: from a customer request to business records</text>
+    <text x="44" y="97" font-size="21" fill="#6d637d">Routine work proceeds within the business rules. Exceptions become work for a person.</text>
+    <g fill="#fff" stroke="#e1dced" stroke-width="2">
+      <rect x="44" y="154" width="250" height="166" rx="18"/>
+      <rect x="364" y="154" width="270" height="166" rx="18"/>
+      <rect x="704" y="154" width="270" height="166" rx="18"/>
+      <rect x="1044" y="154" width="272" height="166" rx="18"/>
+    </g>
+    <g fill="#7258b2" font-size="15" font-weight="700" letter-spacing="1.5">
+      <text x="65" y="184">CUSTOMER</text><text x="385" y="184">ASSISTANT</text><text x="725" y="184">BUSINESS RULES</text><text x="1065" y="184">SAVED STATE</text>
+    </g>
+    <g fill="#292236" font-size="23" font-weight="700">
+      <text x="65" y="222">Make a request</text><text x="385" y="222">Clarify &amp; calculate</text><text x="725" y="222">Allowed operation</text><text x="1065" y="222">CRM records</text>
+    </g>
+    <g fill="#6d637d" font-size="20">
+      <text x="65" y="263">Service and quantity</text><text x="65" y="293">Booking or change</text>
+      <text x="385" y="263">Service catalog</text><text x="385" y="293">Customer context</text>
+      <text x="725" y="263">Proceed autonomously</text><text x="725" y="293">or create a staff task</text>
+      <text x="1065" y="263">Orders and invoices</text><text x="1065" y="293">Bookings and tasks</text>
+    </g>
+    <g fill="none" stroke="#7258b2" stroke-width="2.5" marker-end="url(#arrow)">
+      <path d="M294 238 H350"/><path d="M634 238 H690"/><path d="M974 238 H1030"/>
+      <path d="M1180 320 V395"/>
+    </g>
+    <path d="M839 320 V395" fill="none" stroke="#a97826" stroke-width="2.5" marker-end="url(#reviewArrow)"/>
+    <rect x="658" y="410" width="362" height="114" rx="16" fill="#fff7e9" stroke="#eed9b5" stroke-width="2"/>
+    <text x="680" y="446" font-size="23" font-weight="700" fill="#805c22">Staff decision</text>
+    <text x="680" y="479" font-size="20" fill="#805c22">Exceptional discount or refund</text>
+    <text x="680" y="507" font-size="18" fill="#805c22">Recorded as a task for the team</text>
+    <rect x="1044" y="410" width="272" height="114" rx="16" fill="#eef8f4" stroke="#cce6dc" stroke-width="2"/>
+    <text x="1065" y="448" font-size="22" font-weight="700" fill="#276251">Verify the result</text>
+    <text x="1065" y="481" font-size="20" fill="#276251">Read back saved state</text>
+    <text x="1065" y="509" font-size="18" fill="#276251">through the authorized API</text>
+    <text x="44" y="438" font-size="21" font-weight="700" fill="#493b66">A concrete demonstrated outcome</text>
+    <text x="44" y="475" font-size="23" fill="#292236">2 menu layouts × 3,500 RUB</text>
+    <text x="44" y="509" font-size="23" fill="#292236">Order + invoice: 7,000 RUB, awaiting payment</text>
+    <text x="44" y="564" font-size="17" fill="#8a8099">Product workflow illustration, not an application screenshot or an internal architecture diagram.</text>
+  </g>
+</svg>

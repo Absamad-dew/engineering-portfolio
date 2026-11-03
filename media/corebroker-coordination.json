@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "captured_utc": "2026-11-03T13:49:52.176467+00:00",
+  "kind": "actual local black-box coordination demonstration",
+  "conditions": {
+    "project": "github-portfolio",
+    "requested_physical_cores": 1,
+    "exclusive": false,
+    "power_profile": null,
+    "worker": "synthetic SHA256 marker plus four-second resource hold; not a throughput benchmark"
+  },
+  "scenarios": [
+    {
+      "name": "independent",
+      "shared_lock": null,
+      "overlap_ms": 3086.547,
+      "jobs": [
+        {
+          "label": "A",
+          "submitted_ms": 0.023,
+          "started_ms": 838.662,
+          "finished_ms": 4839.452,
+          "lease_id": "ce85a87f-cf9c-4427-8caa-174c6108ae02",
+          "physical_cores": [
+            0
+          ],
+          "logical_cpus": [
+            0,
+            1
+          ],
+          "l3_indices": [
+            0
+          ],
+          "exclusive": false,
+          "exit_code": 0,
+          "worker_sha256": "3b044271dfa94c1a4fd47dd92da6eb5c4237f86d3e8182f05627ef8ad1bcf9eb"
+        },
+        {
+          "label": "B",
+          "submitted_ms": 865.57,
+          "started_ms": 1752.905,
+          "finished_ms": 5754.147,
+          "lease_id": "a7a1391f-7757-49ed-a60d-24f5de6f7120",
+          "physical_cores": [
+            2
+          ],
+          "logical_cpus": [
+            2,
+            3
+          ],
+          "l3_indices": [
+            0
+          ],
+          "exclusive": false,
+          "exit_code": 0,
+          "worker_sha256": "3ad53a79e41e4b13e56219e7d5f94ee08029aa42d6d28413c33a174d69405355"
+        }
+      ]
+    },
+    {
+      "name": "shared-resource",
+      "shared_lock": "portfolio-demo-resource",
+      "overlap_ms": 0,
+      "jobs": [
+        {
+          "label": "A",
+          "submitted_ms": 0.007,
+          "started_ms": 897.069,
+          "finished_ms": 4897.706,
+          "lease_id": "e36d9477-6332-4ad8-916e-1a8dca515445",
+          "physical_cores": [
+            0
+          ],
+          "logical_cpus": [
+            0,
+            1
+          ],
+          "l3_indices": [
+            0
+          ],
+          "exclusive": false,
+          "exit_code": 0,
+          "worker_sha256": "67d1c22c55d3a1b5f5cd50a4565dc69abc4c1b901f1fac819b21ee5f168c6755"
+        },
+        {
+          "label": "B",
+          "submitted_ms": 918.86,
+          "started_ms": 5900.548,
+          "finished_ms": 9901.558,
+          "lease_id": "dd5f8aa9-49e5-4342-87f5-73f24efe7f8f",
+          "physical_cores": [
+            0
+          ],
+          "logical_cpus": [
+            0,
+            1
+          ],
+          "l3_indices": [
+            0
+          ],
+          "exclusive": false,
+          "exit_code": 0,
+          "worker_sha256": "d24c76421363aa4a738ce908008f2f223cb0b1098de8f738c82f9a14aa408f4a"
+        }
+      ]
+    }
+  ]
+}

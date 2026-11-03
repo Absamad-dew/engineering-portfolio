@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="686" viewBox="0 0 1200 686" role="img" aria-labelledby="title desc">
+<title id="title">ChronoField related-rendition storage: 45.14 MB to 7.38 MB</title><desc id="desc">A separate measurement on two real source excerpts and twenty exact related renditions. Independent CFT11 compact files: 45.14 MB. Complete CFMS catalog including manifests and index: 7.38 MB. Additional reduction 83.65 percent. All twenty outputs exact. This population is separate from the Full-HD aggregate.</desc>
+<metadata>{&quot;source_commit&quot;: &quot;e29488e2d1d4932bc94957d0d0c8ac60fff4b4e5&quot;, &quot;source_url&quot;: &quot;https://github.com/Absamad-dew/chronofield-investor-materials/blob/e29488e2d1d4932bc94957d0d0c8ac60fff4b4e5/README.md&quot;}</metadata>
+<rect x="0" y="0" width="1200.000" height="686" rx="18" fill="#10132b"/>
+<g font-family="Segoe UI,Arial,sans-serif">
+<text x="64" y="54" fill="#65e4d0" font-size="16" font-weight="600" text-anchor="start" letter-spacing="1.5">CHRONOFIELD · RELATED-RENDITION STORAGE · SEPARATE RESULT</text>
+<text x="64" y="109" fill="#f4f7ff" font-size="49" font-weight="700" text-anchor="start">45.14 MB → 7.38 MB</text>
+<text x="64" y="152" fill="#b8c4dc" font-size="21" font-weight="400" text-anchor="start">Two real source excerpts · 20 exact related outputs · known production transformations</text>
+<path d="M64.000 246V405" stroke="#35415f" stroke-width="1"/>
+<text x="64.0" y="433" fill="#b8c4dc" font-size="16" font-weight="400" text-anchor="middle">0 MB</text>
+<path d="M278.400 246V405" stroke="#35415f" stroke-width="1"/>
+<text x="278.4" y="433" fill="#b8c4dc" font-size="16" font-weight="400" text-anchor="middle">10 MB</text>
+<path d="M492.800 246V405" stroke="#35415f" stroke-width="1"/>
+<text x="492.8" y="433" fill="#b8c4dc" font-size="16" font-weight="400" text-anchor="middle">20 MB</text>
+<path d="M707.200 246V405" stroke="#35415f" stroke-width="1"/>
+<text x="707.2" y="433" fill="#b8c4dc" font-size="16" font-weight="400" text-anchor="middle">30 MB</text>
+<path d="M921.600 246V405" stroke="#35415f" stroke-width="1"/>
+<text x="921.6" y="433" fill="#b8c4dc" font-size="16" font-weight="400" text-anchor="middle">40 MB</text>
+<path d="M1136.000 246V405" stroke="#35415f" stroke-width="1"/>
+<text x="1136.0" y="433" fill="#b8c4dc" font-size="16" font-weight="400" text-anchor="middle">50 MB</text>
+<text x="64" y="242" fill="#f4f7ff" font-size="23" font-weight="500" text-anchor="start">Independent CFT11 compact files</text>
+<text x="1136" y="242" fill="#f4f7ff" font-size="24" font-weight="650" text-anchor="end">45.14 MB</text>
+<rect x="64" y="264" width="967.802" height="30" rx="2" fill="#7887a6"/>
+<text x="64" y="352" fill="#f4f7ff" font-size="23" font-weight="500" text-anchor="start">Complete CFMS catalog · includes manifests + index</text>
+<text x="1136" y="352" fill="#f4f7ff" font-size="24" font-weight="650" text-anchor="end">7.38 MB</text>
+<rect x="64" y="374" width="158.227" height="30" rx="2" fill="#65e4d0"/>
+<text x="64" y="508" fill="#65e4d0" font-size="36" font-weight="700" text-anchor="start">83.65% less after individual compression</text>
+<text x="64" y="551" fill="#f4f7ff" font-size="23" font-weight="600" text-anchor="start">20/20 exact outputs · 261 aggregate compact decode fps</text>
+<path d="M64 581H1136" stroke="#35415f" stroke-width="1"/>
+<text x="64" y="620" fill="#b8c4dc" font-size="20" font-weight="400" text-anchor="start">For related production families: ABR ladders, previews, crops and version variants.</text>
+<text x="64" y="659" fill="#b8c4dc" font-size="16" font-weight="400" text-anchor="start">PUBLIC SOURCE · ChronoField README · e29488e2d1d4932b</text>
+</g></svg>

@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="830" viewBox="0 0 1200 830" role="img" aria-labelledby="title desc">
+<title id="title">ChronoField: fewer bytes and faster exact Full-HD processing</title><desc id="desc">Separate zero-based bars for one retained three-source Full-HD aggregate against strict-lossless AV1 cpu-used=4. Bytes: AV1 100, ChronoField 58.63. Encode speed: AV1 1x, ChronoField 8.42x. Decode speed: AV1 1x, ChronoField 4.98x. Exact RGB SHA-256 reconstruction.</desc>
+<metadata>{&quot;source_commit&quot;: &quot;e29488e2d1d4932bc94957d0d0c8ac60fff4b4e5&quot;, &quot;source_url&quot;: &quot;https://github.com/Absamad-dew/chronofield-investor-materials/blob/e29488e2d1d4932bc94957d0d0c8ac60fff4b4e5/README.md&quot;}</metadata>
+<rect x="0" y="0" width="1200.000" height="830" rx="18" fill="#10132b"/>
+<g font-family="Segoe UI,Arial,sans-serif">
+<text x="64" y="54" fill="#65e4d0" font-size="16" font-weight="600" text-anchor="start" letter-spacing="2">CHRONOFIELD · ABSAMAD MANTUROV · COMPRESSION R&amp;D</text>
+<text x="64" y="109" fill="#f4f7ff" font-size="43" font-weight="700" text-anchor="start">Fewer bytes. Faster encode and decode.</text>
+<text x="64" y="152" fill="#b8c4dc" font-size="21" font-weight="400" text-anchor="start">One retained three-source Full-HD aggregate · strict-lossless AV1 cpu-used=4</text>
+<text x="64" y="216" fill="#b8c4dc" font-size="21" font-weight="600" text-anchor="start">COMPRESSED BYTES · AV1 = 100</text>
+<text x="1136" y="216" fill="#65e4d0" font-size="25" font-weight="650" text-anchor="end">41.37% fewer bytes</text>
+<path d="M300.000 238V320" stroke="#35415f" stroke-width="1"/>
+<text x="300.0" y="346" fill="#b8c4dc" font-size="16" font-weight="400" text-anchor="middle">0</text>
+<path d="M465.000 238V320" stroke="#35415f" stroke-width="1"/>
+<text x="465.0" y="346" fill="#b8c4dc" font-size="16" font-weight="400" text-anchor="middle">25</text>
+<path d="M630.000 238V320" stroke="#35415f" stroke-width="1"/>
+<text x="630.0" y="346" fill="#b8c4dc" font-size="16" font-weight="400" text-anchor="middle">50</text>
+<path d="M795.000 238V320" stroke="#35415f" stroke-width="1"/>
+<text x="795.0" y="346" fill="#b8c4dc" font-size="16" font-weight="400" text-anchor="middle">75</text>
+<path d="M960.000 238V320" stroke="#35415f" stroke-width="1"/>
+<text x="960.0" y="346" fill="#b8c4dc" font-size="16" font-weight="400" text-anchor="middle">100</text>
+<text x="64" y="264" fill="#f4f7ff" font-size="21" font-weight="500" text-anchor="start">AV1 baseline</text>
+<rect x="300" y="245" width="660.000" height="24" rx="2" fill="#7887a6"/>
+<text x="1136" y="265" fill="#f4f7ff" font-size="24" font-weight="600" text-anchor="end">100</text>
+<text x="64" y="309" fill="#f4f7ff" font-size="21" font-weight="500" text-anchor="start">ChronoField</text>
+<rect x="300" y="290" width="386.958" height="24" rx="2" fill="#65e4d0"/>
+<text x="1136" y="310" fill="#f4f7ff" font-size="24" font-weight="600" text-anchor="end">58.63</text>
+<path d="M64 366H1136" stroke="#35415f" stroke-width="1"/>
+<text x="64" y="407" fill="#b8c4dc" font-size="21" font-weight="600" text-anchor="start">ENCODE SPEED · AV1 = 1×</text>
+<text x="1136" y="407" fill="#65e4d0" font-size="25" font-weight="650" text-anchor="end">8.42× encode speed</text>
+<path d="M300.000 429V511" stroke="#35415f" stroke-width="1"/>
+<text x="300.0" y="537" fill="#b8c4dc" font-size="16" font-weight="400" text-anchor="middle">0×</text>
+<path d="M432.000 429V511" stroke="#35415f" stroke-width="1"/>
+<text x="432.0" y="537" fill="#b8c4dc" font-size="16" font-weight="400" text-anchor="middle">2×</text>
+<path d="M564.000 429V511" stroke="#35415f" stroke-width="1"/>
+<text x="564.0" y="537" fill="#b8c4dc" font-size="16" font-weight="400" text-anchor="middle">4×</text>
+<path d="M696.000 429V511" stroke="#35415f" stroke-width="1"/>
+<text x="696.0" y="537" fill="#b8c4dc" font-size="16" font-weight="400" text-anchor="middle">6×</text>
+<path d="M828.000 429V511" stroke="#35415f" stroke-width="1"/>
+<text x="828.0" y="537" fill="#b8c4dc" font-size="16" font-weight="400" text-anchor="middle">8×</text>
+<path d="M960.000 429V511" stroke="#35415f" stroke-width="1"/>
+<text x="960.0" y="537" fill="#b8c4dc" font-size="16" font-weight="400" text-anchor="middle">10×</text>
+<text x="64" y="455" fill="#f4f7ff" font-size="21" font-weight="500" text-anchor="start">AV1 baseline</text>
+<rect x="300" y="436" width="66.000" height="24" rx="2" fill="#7887a6"/>
+<text x="1136" y="456" fill="#f4f7ff" font-size="24" font-weight="600" text-anchor="end">1×</text>
+<text x="64" y="500" fill="#f4f7ff" font-size="21" font-weight="500" text-anchor="start">ChronoField</text>
+<rect x="300" y="481" width="555.720" height="24" rx="2" fill="#65e4d0"/>
+<text x="1136" y="501" fill="#f4f7ff" font-size="24" font-weight="600" text-anchor="end">8.42×</text>
+<path d="M64 557H1136" stroke="#35415f" stroke-width="1"/>
+<text x="64" y="598" fill="#b8c4dc" font-size="21" font-weight="600" text-anchor="start">DECODE SPEED · AV1 = 1×</text>
+<text x="1136" y="598" fill="#65e4d0" font-size="25" font-weight="650" text-anchor="end">4.98× decode speed</text>
+<path d="M300.000 620V702" stroke="#35415f" stroke-width="1"/>
+<text x="300.0" y="728" fill="#b8c4dc" font-size="16" font-weight="400" text-anchor="middle">0×</text>
+<path d="M432.000 620V702" stroke="#35415f" stroke-width="1"/>
+<text x="432.0" y="728" fill="#b8c4dc" font-size="16" font-weight="400" text-anchor="middle">1×</text>
+<path d="M564.000 620V702" stroke="#35415f" stroke-width="1"/>
+<text x="564.0" y="728" fill="#b8c4dc" font-size="16" font-weight="400" text-anchor="middle">2×</text>
+<path d="M696.000 620V702" stroke="#35415f" stroke-width="1"/>
+<text x="696.0" y="728" fill="#b8c4dc" font-size="16" font-weight="400" text-anchor="middle">3×</text>
+<path d="M828.000 620V702" stroke="#35415f" stroke-width="1"/>
+<text x="828.0" y="728" fill="#b8c4dc" font-size="16" font-weight="400" text-anchor="middle">4×</text>
+<path d="M960.000 620V702" stroke="#35415f" stroke-width="1"/>
+<text x="960.0" y="728" fill="#b8c4dc" font-size="16" font-weight="400" text-anchor="middle">5×</text>
+<text x="64" y="646" fill="#f4f7ff" font-size="21" font-weight="500" text-anchor="start">AV1 baseline</text>
+<rect x="300" y="627" width="132.000" height="24" rx="2" fill="#7887a6"/>
+<text x="1136" y="647" fill="#f4f7ff" font-size="24" font-weight="600" text-anchor="end">1×</text>
+<text x="64" y="691" fill="#f4f7ff" font-size="21" font-weight="500" text-anchor="start">ChronoField</text>
+<rect x="300" y="672" width="657.360" height="24" rx="2" fill="#65e4d0"/>
+<text x="1136" y="692" fill="#f4f7ff" font-size="24" font-weight="600" text-anchor="end">4.98×</text>
+<path d="M64 748H1136" stroke="#35415f" stroke-width="1"/>
+<text x="64" y="783" fill="#f4f7ff" font-size="21" font-weight="600" text-anchor="start">EXACT RGB · original frames reconstructed and SHA-256 verified</text>
+<text x="64" y="812" fill="#b8c4dc" font-size="16" font-weight="400" text-anchor="start">PUBLIC SOURCE · ChronoField README · e29488e2d1d4932b</text>
+</g></svg>

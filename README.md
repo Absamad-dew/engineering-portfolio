@@ -1,40 +1,69 @@
-<img src="media/engineering.svg" alt="Absamad Manturov: AI products, reliable agents and systems R&D" width="100%">
+# Absamad Manturov — selected engineering work
 
-# Engineering portfolio
+I build autonomous business software and systems for running computational work efficiently. This portfolio brings together the products, original research and engineering decisions behind them.
 
-I build AI products and the infrastructure that makes their actions dependable. My work connects conversational interfaces, business workflows, durable execution and performance research.
+[Aster](projects/aster.md) · [ChronoField](research/README.md) · [CoreBroker](projects/corebroker.md) · [Video Studio](https://github.com/Absamad-dew/dlss5-video-studio) · [Tervallis](projects/tervallis.md)
 
-**Start with a working product, then inspect the engineering proof.**
+[GitHub profile](https://github.com/Absamad-dew) · [Русский](README.ru.md) · [Email](mailto:absamad.manturov@gmail.com) · [Telegram](https://t.me/Absamad_m)
 
-[GitHub profile](https://github.com/Absamad-dew) · [Email](mailto:absamad.manturov@gmail.com) · [Telegram](https://t.me/Absamad_m)
+## Aster · from a customer conversation to business operations
 
-## Products
+A sales agent connected to a full CRM. It explains services, collects the brief and records orders, invoices and bookings. The owner can use chat or voice while staff keep the detailed customer, company, finance, stock and team workspace. The initial prototype took two days; integration and reliability work continued afterward.
 
-| Project | Problem solved | Explore |
-|---|---|---|
-| **Aster** | Let a business owner operate sales and a detailed CRM through conversation, while customers progress from a question to an order and invoice. | [Product walkthrough and verification](projects/aster.md) |
-| **CoreBroker** | Keep concurrent agent builds, tests and experiments from competing blindly for the same machine. | [Resource coordination and an actual run receipt](projects/corebroker.md) |
-| **Tervallis** | Keep projects, decisions, experiments and agent results in one persistent working context. | [Research operations and MCP workflows](projects/tervallis.md) |
+<img src="media/aster-order-invoice.png" alt="Aster: actual customer conversation, order for two layouts and matching 7000 RUB invoice in the CRM" width="100%">
 
-These three products are presented through descriptions and demonstrations. Their source code is private.
+**The result shown:** two menu layouts at 3,500 RUB each, an accepted 7,000 RUB order and its invoice awaiting payment, visible beside the customer conversation.
 
-## Public engineering you can run
+[Walkthrough: customers, owner, team and autonomy](projects/aster.md) · [Verification snapshot](docs/aster-verification.md)
 
-| Repository | The concrete engineering question |
-|---|---|
-| [agent-action-ledger](https://github.com/Absamad-dew/agent-action-ledger) | What happens if a process dies after the remote action succeeds but before its receipt is stored? |
-| [ru-agent-eval-kit](https://github.com/Absamad-dew/ru-agent-eval-kit) | Did an agent actually change the expected state, or merely say it succeeded? |
-| [ruagent-compat](https://github.com/Absamad-dew/ruagent-compat) | Can tool contracts survive malformed output, denied actions and concurrent duplicate calls? |
-| [compression-observatory](https://github.com/Absamad-dew/compression-observatory) | Which lossless operating points remain competitive when bytes, time and exact reconstruction are measured together? |
-| [dlss5-video-studio](https://github.com/Absamad-dew/dlss5-video-studio) | How do motion/depth inference, native D3D12 processing, video transport and encoding fit into a usable Windows application? |
-| [price-intelligence-demo](https://github.com/Absamad-dew/price-intelligence-demo) | How do inconsistent supplier files become comparable prices without quietly mixing currencies or hiding uncertain rows? |
+## ChronoField · original compression R&D
 
-## Research
+A native exact-video codec and related-rendition storage system. The published three-source Full-HD comparison records **41.37% fewer bytes, 8.42× encode speed and 4.98× decode speed** against the measured strict-lossless AV1 baseline, with exact RGB reconstruction.
 
-[Compression R&D overview](research/README.md) connects the public ChronoField results to the broader research direction. The research implementations and unpublished techniques are kept separate from the open-source tooling.
+<img src="media/research-fullhd.svg" alt="ChronoField published three-source aggregate: size and speed compared against the same AV1 baseline" width="100%">
 
-## How I work
+A separate family-storage result reduces already-compressed related outputs from **45.14 MB to 7.38 MB**, including the catalog metadata, with all 20 outputs reconstructed exactly.
 
-[Agent-assisted engineering](docs/working-with-agents.md) explains how I divide work, review boundaries and test outcomes. [Evidence index](docs/evidence.md) separates runnable public checks, recorded product verification and research measurements.
+[Results and comparison conditions](research/README.md) · [Обзор на русском](research/README.ru.md) · [PTC, neural weights, KV cache and other research](research/other-work.md)
 
-Moscow · remote work and relocation · AI product engineering, agent reliability and systems/R&D roles.
+## CoreBroker · parallel work with explicit resources
+
+A Windows coordinator for builds, tests and agent workloads. Physical-core leases, named resource locks and process history make parallelism manageable across projects.
+
+<img src="media/corebroker-timeline.svg" alt="Actual CoreBroker demonstration: independent workers overlap on separate cores; shared-resource workers do not overlap" width="100%">
+
+In the recorded coordination demonstration, independent workers overlap for **3.087 seconds** on separate physical cores. With the same named lock, the second worker waits and their observed execution intervals do not overlap.
+
+[Engineering case and raw observations](projects/corebroker.md)
+
+## Video Studio · native GPU video pipeline
+
+A Windows application with realtime, recording and stereo/VR workflows. Its public C++/D3D12 implementation connects persistent producers, bounded frame transport, GPU resource ownership, NVENC and the audio playback clock.
+
+The retained native-stage A/B measurement improved **24.393 → 29.981 FPS (+22.9%)** under matched settings. The engineering tour traces the resource-lifetime, backpressure and encoder decisions to stable source lines.
+
+[Public project](https://github.com/Absamad-dew/dlss5-video-studio) · [Engineering tour](https://github.com/Absamad-dew/dlss5-video-studio/blob/main/ENGINEERING_OVERVIEW.md) · [Обзор на русском](https://github.com/Absamad-dew/dlss5-video-studio/blob/main/ENGINEERING_OVERVIEW_RU.md)
+
+## Tervallis · persistent context for research and agents
+
+My working platform for projects, tasks, experiments, decisions and files. I organized work across **20 agents**, with MCP integrations returning a task's result to the project discussion that requested it. Versioned operations, idempotent creation and read-back checks keep handoffs connected to saved state.
+
+[Case: discussion → claimed work → saved result](projects/tervallis.md)
+
+## My role
+
+I define product behavior, make system-level decisions, organize agent-assisted implementation and integrate the result. Earlier work included internal automation across three related businesses, around 15 people in total. [Working with agents](docs/working-with-agents.md) describes the delivery approach through concrete examples.
+
+Aster, CoreBroker and Tervallis are shown through descriptions and demonstrations; their implementations remain private. Research source and protected techniques stay closed. The linked cases give the scope of each captured result. [Sources and media provenance](docs/evidence.md).
+
+<a id="additional-public-libraries-and-engineering-experiments"></a>
+<details>
+<summary>Additional public libraries and engineering experiments</summary>
+
+- [Agent Action Ledger](https://github.com/Absamad-dew/agent-action-ledger): durable tool actions and reconciliation after uncertain outcomes.
+- [RU Agent Eval Kit](https://github.com/Absamad-dew/ru-agent-eval-kit): observed tool outcomes, fault injection and a recorded local model run.
+- [ruagent-compat](https://github.com/Absamad-dew/ruagent-compat): executable tool contracts and concurrency regressions.
+- [Compression Observatory](https://github.com/Absamad-dew/compression-observatory): exact round trips, weighted aggregation and Pareto reports for standard codecs.
+- [Price Intelligence](https://github.com/Absamad-dew/price-intelligence-demo): supplier normalization, currency-aware comparisons and a review queue.
+
+</details>
