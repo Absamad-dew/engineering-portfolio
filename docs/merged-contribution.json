@@ -8,5 +8,10 @@
   "changed_files": 2,
   "scope": "LangGraph integration: update existing namespace/key, strict write lookup and regression coverage",
   "target_branch": "state-management/merge-prs",
-  "released_version": null
+  "released_version": null,
+  "main_inclusion": {
+    "pull_request": "https://github.com/moorcheh-ai/memanto/pull/1721",
+    "merge_commit_sha": "ebf9c6901a9270a62547f9a52f43314ff5ed226a",
+    "merged_at": "2026-07-30T17:04:41Z"
+  }
 }

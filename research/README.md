@@ -22,7 +22,7 @@ I founded ChronoField and independently designed and implemented its codec, fami
 | Three-source Full-HD aggregate vs strict-lossless AV1 `cpu-used=4` | **41.37% fewer bytes, 8.42× encode speed, 4.98× decode speed; exact RGB SHA-256** |
 | Two excerpts / 20 related outputs, after individual compression | **45.14 MB → 7.38 MB complete catalog; 20/20 outputs exact** |
 
-[Full result, hardware and scope](chronofield.md) · [Independent validation brief](VALIDATION_BRIEF.md)
+[Full result, hardware and scope](chronofield.md)
 
 Code, protected methods, binaries and private corpora remain closed. Result summaries preserve population, baseline and reconstruction/quality scope. They do not combine different corpora into one frontier or turn a prepared-state measurement into cold performance.
 

@@ -41,7 +41,7 @@ The retained v0.55 scenario run exercised the lifecycle beyond an initial sale:
 
 ## 4. Engineering decisions and my approach
 
-By my own account, the first prototype took two days. The operating workspace and v0.55 verification reflect later iterations; the two-day estimate does not time the current feature set. I use agents for implementation and investigation; I own the product behavior, system boundaries, integration and the decision to accept a result.
+I use agents for implementation and investigation; I own the product behavior, system boundaries, integration and the decision to accept a result.
 
 The central acceptance question is whether the business records match the conversation. In the v0.55 verification, all **40 existing presentation conversations** were completed and read back through the authorized API, with an actual model response in every conversation. Failed intermediate turns remained in the history after successful continuation. Delivery claims also remain tied to receipts: an earlier invoice handoff cannot justify claiming a new delivery.
 
@@ -60,7 +60,7 @@ Aster связывает клиентский диалог с операцион
 
 Моя роль — постановка продукта, системные решения, интеграция агентской разработки и приёмка по наблюдаемому состоянию. В проверке v0.55 завершены и повторно сверены через API 40 презентационных бесед; в каждой есть настоящий ответ модели. Проверены также отмены, переносы, исключения и сохранение истории неудачных ходов.
 
-По моей оценке, первый прототип занял два дня. Текущий набор возможностей и проверка v0.55 относятся к последующим итерациям; публичные даты фиксируют публикацию материалов, а не время всей разработки.
+В v0.55 я проверял сценарии целиком, от ответа клиенту до сохранённого заказа, счёта или задачи для сотрудника.
 
 Демонстрационные данные синтетические; внешние каналы и банковские события локальные. Реальных клиентов, списаний и физического микрофона в этом прогоне не было. Исходники закрыты.
 

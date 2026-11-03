@@ -1,6 +1,6 @@
 # Selected engineering work
 
-Products, systems and original research by **Absamad Manturov**.
+Products, systems and original research by **Absamad Manturov**, with eight years in software development.
 
 [GitHub](https://github.com/Absamad-dew) · [Русский](README.ru.md) · [Email](mailto:absamad.manturov@gmail.com)
 
@@ -22,14 +22,14 @@ Products, systems and original research by **Absamad Manturov**.
 - **ChronoField, three-source 1080p comparison:** 41.37% fewer bytes, 8.42× encode speed and 4.98× decode speed against the measured strict-lossless AV1 baseline, with exact RGB reconstruction.
 - **Related-rendition storage, separate study:** 45.14 MB → 7.38 MB for the complete catalog; all 20 outputs reconstructed exactly.
 - **Video Studio, matched native-stage A/B:** 24.393 → 29.981 FPS (+22.9%). The public source and measurement notes describe the GPU resource and encoder changes.
-- **Aster:** first working prototype built in two days; later iterations added the broader operating workspace and lifecycle checks.
+- **Aster:** verified 40 completed scenario conversations through the API, checking the resulting CRM records. Separate lifecycle checks cover cancellations, rescheduling and exceptions.
 
 Each linked case supplies its settings, measurement boundary and retained evidence. The [research index](research/README.md) separates datasets, baselines, exactness checks and storage/loading tradeoffs.
 
 ## Business delivery and upstream contribution
 
 - **[Earlier business automation](projects/business-automation.md):** customer enquiries connected to pricing and CRM, vector preparation with cutting plans and offcut records, and artwork validation with customer PDF reports. Built and introduced across three related businesses, around 15 people in total.
-- **[Memanto / LangGraph](docs/open-source-contributions.md):** repeated-key update correctness and regression coverage, accepted upstream in [PR #1495](https://github.com/moorcheh-ai/memanto/pull/1495), merged 29 July 2026.
+- **[Memanto / LangGraph](docs/open-source-contributions.md):** repeated-key update correctness and regression coverage, accepted upstream in [PR #1495](https://github.com/moorcheh-ai/memanto/pull/1495), merged 29 July 2026; the change reached [main through PR #1721](https://github.com/moorcheh-ai/memanto/pull/1721).
 
 ## Engineering approach
 

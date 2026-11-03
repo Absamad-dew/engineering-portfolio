@@ -42,4 +42,4 @@ The previous standalone presentation is preserved on the [presentation-archive b
 
 ## Upstream contribution
 
-The [Memanto / LangGraph case](open-source-contributions.md) is backed by the public pull request, merged commit and current GitHub API state. Acceptance into `state-management/merge-prs` is recorded separately from release inclusion or any claim of distributed atomicity.
+The [Memanto / LangGraph case](open-source-contributions.md) is backed by the public pull request, merged commit and current GitHub API state. The follow-up merge into `main` is also linked. Release inclusion and distributed atomicity are separate questions.

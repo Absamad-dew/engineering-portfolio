@@ -24,10 +24,8 @@ The already-public [deck, slide 6](https://github.com/Absamad-dew/chronofield-in
 
 My wider video research also includes lossy compression, as named in the [public research scope](https://github.com/Absamad-dew/engineering-portfolio/blob/8663cd20ac13fd323d0f87346d682be12a5a9b5a/research/other-work.md). The numerical results on this page concern exact-video and exact family storage; no undisclosed lossy result is substituted for them.
 
-> **Measurement context.** Author-retained local measurements on the same host and source frames: Ryzen 7 H 255, 8 cores / 16 threads, integrated Radeon 780M, 16 GB RAM. The Full-HD baseline is strict-lossless AV1 `cpu-used=4`; its three metrics share one retained aggregate. The storage result uses two source excerpts and 20 related renditions, with complete catalog size. Independent reproduction is the next public milestone. The linked note supplies scope and competitive context; implementation and unpublished mechanisms remain private. [Pinned methodology and scope →](https://github.com/Absamad-dew/chronofield-investor-materials/blob/e29488e2d1d4932bc94957d0d0c8ac60fff4b4e5/COMPETITIVE_POSITION.md)
+> **Measurement context.** Author-retained local measurements on the same host and source frames: Ryzen 7 H 255, 8 cores / 16 threads, integrated Radeon 780M, 16 GB RAM. The Full-HD baseline is strict-lossless AV1 `cpu-used=4`; its three metrics share one retained aggregate. The storage result uses two source excerpts and 20 related renditions, with complete catalog size. The linked note supplies scope and competitive context; implementation and unpublished mechanisms remain private. [Pinned methodology and scope →](https://github.com/Absamad-dew/chronofield-investor-materials/blob/e29488e2d1d4932bc94957d0d0c8ac60fff4b4e5/COMPETITIVE_POSITION.md)
 
 [Measurement tooling: Compression Observatory](https://github.com/Absamad-dew/compression-observatory) · [Back to portfolio](../README.md)
 
 [Other compression research](other-work.md)
-
-[Independent validation brief](VALIDATION_BRIEF.md)

@@ -8,7 +8,7 @@ A useful slice connects the interface to the result it promises. In Aster, that 
 
 I define the acceptance condition before delegating implementation. For a business action it is the record and state transition. For a video pipeline it includes frames, timestamps and resource lifetime. For compression it includes exact reconstructed bytes alongside size and processing time.
 
-I built the first Aster prototype in two days. Subsequent iterations expanded the operating workspace and exercised cancellations, booking changes, access boundaries and commercial exceptions. The product case shows the prototype timeline alongside the later captured builds and verification.
+In Aster I expanded the operating workspace and checked cancellations, booking changes, access boundaries and commercial exceptions. The product case links the running interface to the recorded verification.
 
 ## Divide ownership, then inspect the handoffs
 
@@ -39,7 +39,7 @@ Recorded observations and design rationale answer different questions. A screens
 | 2026-11-03, 13:49:52 | [CoreBroker observation](../media/corebroker-coordination.json) | The artifact records this capture time for the four-worker coordination demonstration. |
 | 2026-11-03, 14:23:09 | [Flagship case revision](https://github.com/Absamad-dew/engineering-portfolio/commit/e2b630dcc3a8bf92e03d4ca7624cb2f42b981cf5) | Product demonstrations and the approved research results were brought together in a later portfolio revision. |
 
-Git timestamps date the revisions in the available public history; they do not independently establish push time or the beginning and duration of private development. The two-day prototype estimate and the product checks are identified by their own evidence type.
+The timestamps identify public revisions and recorded checks. The linked artifacts show what changed and what was verified.
 
 Private application source and research mechanisms remain separate from public descriptions, demonstrations and measurements. [Sources and demonstration records](evidence.md).
 
@@ -50,6 +50,6 @@ Private application source and research mechanisms remain separate from public d
 
 В Aster принимается заказ и соответствующий счёт с явным состоянием оплаты; в Tervallis — сохранённый результат, который можно прочитать обратно; в CoreBroker — конкретное выделение ресурсов и поведение общего lock. В публичном executor граница конкурентного изменения подтверждается регрессиями. [Пять решений и их проверки](decision-stories.md).
 
-Первый прототип Aster я сделал за два дня. Затем развивал рабочее пространство, интеграции и надёжность; последующие результаты показаны в снимках и проверке v0.55. Таблица даёт датированные публичные артефакты, а описание Tervallis показывает, как я организовал работу 20 агентов.
+В Aster я развивал рабочее пространство, интеграции и надёжность; результат показан в интерфейсе и проверке v0.55. Таблица даёт датированные публичные артефакты, а описание Tervallis показывает, как я организовал работу 20 агентов.
 
 </details>
