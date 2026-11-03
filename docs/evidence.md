@@ -18,15 +18,15 @@ The [public project](https://github.com/Absamad-dew/dlss5-video-studio) owns its
 
 ## ChronoField and other research
 
-All numerical research claims and graph inputs come from the existing public ChronoField [README](https://github.com/Absamad-dew/chronofield-investor-materials/blob/e29488e2d1d4932bc94957d0d0c8ac60fff4b4e5/README.md) and [competitive note](https://github.com/Absamad-dew/chronofield-investor-materials/blob/e29488e2d1d4932bc94957d0d0c8ac60fff4b4e5/COMPETITIVE_POSITION.md). The Full-HD comparison and rendition-family experiment have separate populations and normalizations. [Research case](../research/README.md).
+ChronoField numerical claims and graph inputs come from its existing public [README](https://github.com/Absamad-dew/chronofield-investor-materials/blob/e29488e2d1d4932bc94957d0d0c8ac60fff4b4e5/README.md) and [competitive note](https://github.com/Absamad-dew/chronofield-investor-materials/blob/e29488e2d1d4932bc94957d0d0c8ac60fff4b4e5/COMPETITIVE_POSITION.md). The Full-HD comparison and rendition-family experiment have separate populations and normalizations. [Research case](../research/README.md).
 
-The [other-work index](../research/other-work.md) names research domains supplied by the author: structured text/PTC, model weights, KV cache and video. It adds no unpublished numerical ranking or implementation mechanism.
+The expanded [research index](../research/README.md) also presents six selected PTC, neural-weight and KV-cache studies. Their [result records](../research/results.json) preserve input scope, dates/date basis, baselines, measured outcomes and reconstruction boundaries. These outcomes were checked against retained technical summaries and correction records; they are author measurements, not independent reproduction. No implementation mechanism, model artifact or private corpus is published.
 
 ## Tervallis and professional background
 
 The Tervallis description uses the author's curated working-platform account: project context, organization of 20 agents, MCP handoffs, versioned tasks, idempotent creation, read-back and checksum checks. The complete event/claim/work/result cycle was checked for one research project. No research task content or internal MCP code is included.
 
-The professional background statement about three related businesses and approximately 15 people was supplied directly by the author. It is distinct from the personal product demonstrations above.
+The [earlier business cases](../projects/business-automation.md) use the author’s professional account of enquiries/pricing/CRM, production preparation and artwork checks. The three-related-businesses / approximately-15-people scope was supplied directly by the author; per-tool user counts are not inferred. Reported process timings remain approximate working estimates. This work is distinct from the later Aster product case.
 
 ## Additional public code
 
@@ -38,4 +38,8 @@ All product captures and vector diagrams are the author's original materials. Th
 
 ## Supplementary presentation materials
 
-The `demos/` directory preserves an earlier static presentation snapshot. Its data records use the same public measurements and approved application captures documented above. It contains no private product or research implementation.
+The previous standalone presentation is preserved on the [presentation-archive branch](https://github.com/Absamad-dew/engineering-portfolio/tree/presentation-archive). Main retains an archive index and a manually dispatched rebuild workflow. Existing hosted and release URLs remain intact.
+
+## Upstream contribution
+
+The [Memanto / LangGraph case](open-source-contributions.md) is backed by the public pull request, merged commit and current GitHub API state. Acceptance into `state-management/merge-prs` is recorded separately from release inclusion or any claim of distributed atomicity.

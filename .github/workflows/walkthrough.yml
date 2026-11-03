@@ -1,9 +1,6 @@
-name: Publish interactive walkthrough
+name: Rebuild archived presentation (manual)
 
 on:
-  push:
-    branches: [main]
-    paths: ['demos/**', 'media/aster-*.png', 'scripts/build_demo.py', 'scripts/check_demo.cjs', 'scripts/serve_demo.py', '.github/workflows/walkthrough.yml', 'NOTICE.md']
   workflow_dispatch:
 
 permissions:
@@ -18,6 +15,8 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v6
+        with:
+          ref: presentation-archive
       - uses: actions/setup-python@v6
         with:
           python-version: '3.13'

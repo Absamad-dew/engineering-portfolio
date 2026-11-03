@@ -1,14 +1,16 @@
-# Other compression research
+# Compression research directions
 
-Alongside ChronoField, my independent research includes:
+[English research index](README.md) · [Обзор на русском](README.ru.md)
 
-| Direction | Work |
-|---|---|
-| **PTC / structured text** | Compression of JSON and other textual data, evaluated through comparative benchmarks and size/speed operating points. |
-| **Neural-network weights** | Experiments in reducing the storage and memory footprint of model parameters. |
-| **KV cache** | Experiments in compression for inference-time model state. |
-| **Video** | Exact reconstruction and lossy video-compression research. |
+The earlier direction list now has individual result briefs:
 
-The [ChronoField case](README.md) contains the results already approved for public disclosure.
+| Direction | English | Русский |
+|---|---|---|
+| PTC / JSON and text | [Two retained JSON studies, exactness and Max/Fast profiles](ptc.md) | [Два JSON-сравнения и профили Max/Fast](ptc.ru.md) |
+| PTCN / model weights | [Complete physical FP8 package, restoration and cold-loading tradeoff](model-weights.md) | [Полный FP8-пакет, точность и цена загрузки](model-weights.ru.md) |
+| PTKV / inference state | [Snapshot, live-session storage and repeat hibernate/wake](kv-cache.md) | [Снимок, живая сессия и повторный цикл сна](kv-cache.ru.md) |
+| Video and related storage | [ChronoField: implemented system and published comparisons](chronofield.md) | [ChronoField: система и опубликованные сравнения](chronofield.ru.md) |
 
-Source code, protected techniques, unpublished designs and private datasets remain closed. A technical discussion can focus on the problem, evaluation approach and results that are cleared for sharing.
+[Machine-readable result summaries](results.json) preserve scope, baselines, units, dates and reconstruction boundaries. Additional lossy-video research remains part of the declared direction; no undisclosed lossy benchmark is substituted for the exact-video results.
+
+Implementations, protected techniques, private corpora and binaries remain closed. The pages present selected author-retained outcomes and separate evaluation briefs.

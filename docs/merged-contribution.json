@@ -1,0 +1,12 @@
+{
+  "repository": "moorcheh-ai/memanto",
+  "pull_request": "https://github.com/moorcheh-ai/memanto/pull/1495",
+  "author": "Absamad-dew",
+  "merged": true,
+  "merged_at": "2026-07-29T18:20:24Z",
+  "merge_commit_sha": "4c19646f28bb091f9a20779e272f0f09cbbc4c4d",
+  "changed_files": 2,
+  "scope": "LangGraph integration: update existing namespace/key, strict write lookup and regression coverage",
+  "target_branch": "state-management/merge-prs",
+  "released_version": null
+}

@@ -27,4 +27,4 @@ A useful external report contains the agreed input manifest, build/settings iden
 
 The report should distinguish reproduction of an earlier result from a new corpus or baseline. Both are useful; they answer different questions.
 
-[Published measurements](README.md) · [Engineering cases](../README.md)
+[Published measurements](chronofield.md) · [Research index](README.md) · [Engineering cases](../README.md)

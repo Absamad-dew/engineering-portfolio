@@ -1,0 +1,300 @@
+{
+  "schema_version": 1,
+  "kind": "non-mechanistic research result summaries",
+  "evidence_status": "author-retained, source-checked; not independent reproduction",
+  "scope": "Selected task, baseline, outcome and reconstruction boundaries only. No implementation, corpus, model files or protected mechanics.",
+  "records": [
+    {
+      "id": "PTC-JSON48-20260809",
+      "direction": "PTC / text",
+      "label": "48-file JSON aggregate",
+      "date": "2026-08-09",
+      "date_basis": "date recorded by the professional evidence audit",
+      "evidence": {
+        "kind": "author_retained_reviewed",
+        "independent_replication": false,
+        "basis": "retained benchmark outcomes selected from a reviewed retained evidence registry",
+        "new_run_for_this_portfolio": false
+      },
+      "scope": {
+        "files": 48,
+        "input_bytes": 84024193,
+        "data_kind": "varied JSON",
+        "aggregation": "sum of compressed bytes on the same files"
+      },
+      "measurements": {
+        "candidate_bytes": 9235511,
+        "comparisons": [
+          {
+            "unit": "bytes",
+            "baseline": 11380780,
+            "candidate": 9235511,
+            "baseline_label": "XZ preset 9",
+            "candidate_label": "PTC",
+            "reduction_percent": 18.85
+          },
+          {
+            "unit": "bytes",
+            "baseline": 11667610,
+            "candidate": 9235511,
+            "baseline_label": "Brotli quality 11",
+            "candidate_label": "PTC",
+            "reduction_percent": 20.84
+          },
+          {
+            "unit": "bytes",
+            "baseline": 11928721,
+            "candidate": 9235511,
+            "baseline_label": "Zstandard level 19",
+            "candidate_label": "PTC",
+            "reduction_percent": 22.58
+          }
+        ]
+      },
+      "reconstruction": "48/48 exact restoration, determinism and corruption checks reported",
+      "boundaries": [
+        "Aggregate size is influenced by large geographic JSON files.",
+        "PTC was smaller than Brotli on 14/48 individual files.",
+        "This retained snapshot records a scoped size benchmark, not completed release qualification or a universal win."
+      ]
+    },
+    {
+      "id": "PTC-JSON4-20260930",
+      "direction": "PTC / text",
+      "label": "Four-file JSON profile comparison",
+      "date": "2026-09-30",
+      "date_basis": "date recorded by the professional evidence audit",
+      "evidence": {
+        "kind": "author_retained_reviewed",
+        "independent_replication": false,
+        "basis": "retained benchmark outcomes selected from a reviewed retained evidence registry",
+        "new_run_for_this_portfolio": false
+      },
+      "scope": {
+        "files": 4,
+        "input_bytes": 112491,
+        "data_kind": "known small JSON tuning inputs",
+        "physical_cores": 16,
+        "logical_processors": 32,
+        "warmups": 1,
+        "measured_rounds": 5,
+        "timing_boundary": "CLI wall time, including process startup and I/O",
+        "thread_settings": "PTC automatic thread selection; selected Brotli/Zstandard baseline thread counts are not specified in this curated summary"
+      },
+      "measurements": {
+        "profiles": [
+          {
+            "name": "Max",
+            "size": {
+              "unit": "bytes",
+              "baseline": 16298,
+              "candidate": 10672,
+              "baseline_label": "Brotli quality 11",
+              "candidate_label": "PTC Max",
+              "reduction_percent": 34.52
+            },
+            "encode_wall_ms": {
+              "baseline": 140.471,
+              "candidate": 1081.497
+            },
+            "decode_wall_ms": {
+              "baseline": 46.109,
+              "candidate": 75.821
+            }
+          },
+          {
+            "name": "Fast",
+            "size": {
+              "unit": "bytes",
+              "baseline": 17589,
+              "candidate": 16728,
+              "baseline_label": "Zstandard level 19",
+              "candidate_label": "PTC Fast",
+              "reduction_percent": 4.9
+            },
+            "encode_wall_ms": {
+              "baseline": 116.0021,
+              "candidate": 80.0776,
+              "baseline_over_candidate": 1.45
+            }
+          }
+        ]
+      },
+      "reconstruction": "exact input reconstruction reported",
+      "boundaries": [
+        "Max and Fast are separate operating points within this one small-input study.",
+        "Max is smaller but slower than its Brotli reference in this run.",
+        "Recorded CLI speed is not an isolated algorithm throughput or universal streaming result."
+      ]
+    },
+    {
+      "id": "PTCN-FP8-PACKAGE-20260916",
+      "direction": "PTCN / weights",
+      "label": "Complete physical FP8 model package",
+      "date": "2026-09-16",
+      "date_basis": "date stated in the retained technical report",
+      "evidence": {
+        "kind": "author_retained_reviewed",
+        "independent_replication": false,
+        "basis": "retained benchmark outcomes selected from a reviewed retained evidence registry",
+        "new_run_for_this_portfolio": false
+      },
+      "scope": {
+        "model": "OLMoE 1B-7B FP8",
+        "gpu": "RTX 5070",
+        "candidate_size_boundary": "complete physical package, including required metadata",
+        "baseline_size_boundary": "source FP8 tensor bytes",
+        "comparison": "same selected FP8 model and retained runtime check"
+      },
+      "measurements": {
+        "size": {
+          "unit": "bytes",
+          "baseline": 7127449856,
+          "candidate": 6052678952,
+          "baseline_label": "source FP8 tensors",
+          "candidate_label": "complete PTCN physical package",
+          "reduction_percent": 15.08
+        },
+        "cold_load_seconds": {
+          "baseline": 6.96,
+          "candidate": 54.48,
+          "baseline_label": "raw FP8 path",
+          "candidate_label": "PTCN path"
+        },
+        "restoration_checks_reported": 3072,
+        "matched_output_token_id_pairs": 2000
+      },
+      "reconstruction": "strict lossless restoration of the already-selected FP8 representation; not restoration of original BF16 weights",
+      "boundaries": [
+        "3,072 is the retained report's restoration count, not independent full-model benchmark runs.",
+        "2,000 matching pairs are output token-ID checks in the retained comparison, not 2,000 separate tasks or a broad model-quality score.",
+        "Cold loading was slower: 54.48 s versus 6.96 s. No general inference speedup is claimed."
+      ]
+    },
+    {
+      "id": "PTKV-Q4-SNAPSHOT-20260921",
+      "direction": "PTKV / KV cache",
+      "label": "Frozen Q4 cache snapshot",
+      "date": "2026-09-21",
+      "date_basis": "date stated in the retained benchmark report",
+      "evidence": {
+        "kind": "author_retained_reviewed",
+        "independent_replication": false,
+        "basis": "retained benchmark outcomes selected from a reviewed retained evidence registry",
+        "new_run_for_this_portfolio": false
+      },
+      "scope": {
+        "context_tokens": 131047,
+        "reference_state": "already-selected Q4 cache representation",
+        "gpu": "RTX 5070",
+        "state": "frozen snapshot"
+      },
+      "measurements": {
+        "size": {
+          "unit": "bytes",
+          "baseline": 452898432,
+          "candidate": 362312621,
+          "baseline_label": "native Q4 snapshot",
+          "candidate_label": "compressed stored snapshot",
+          "reduction_percent": 20.0
+        },
+        "gpu_sha_checks_exact": 18,
+        "gpu_sha_checks_total": 18,
+        "decode_ms_previous_build_comparison": {
+          "baseline": 41.9434,
+          "candidate": 42.1074,
+          "comparison_kind": "previous own build; a different baseline from the native-size reference"
+        }
+      },
+      "reconstruction": "18/18 GPU SHA checks exact for the selected Q4 state",
+      "boundaries": [
+        "The earlier quantization is separate from this exact compression layer.",
+        "The retained decode comparison does not establish a speed win."
+      ]
+    },
+    {
+      "id": "PTKV-Q4-LIVE-20260921",
+      "direction": "PTKV / KV cache",
+      "label": "Live Q4 session hibernation",
+      "date": "2026-09-21",
+      "date_basis": "date stated in the retained benchmark report",
+      "evidence": {
+        "kind": "author_retained_reviewed",
+        "independent_replication": false,
+        "basis": "retained benchmark outcomes selected from a reviewed retained evidence registry",
+        "new_run_for_this_portfolio": false
+      },
+      "scope": {
+        "model": "Qwen3.5-0.8B",
+        "context": "256K as reported",
+        "reference_state": "already-selected Q4 cache representation",
+        "gpu": "RTX 5070",
+        "state": "stored backing while session sleeps"
+      },
+      "measurements": {
+        "size": {
+          "unit": "bytes",
+          "baseline": 898560000,
+          "candidate": 714170614,
+          "baseline_label": "native Q4 live-cache bytes",
+          "candidate_label": "stored compressed backing",
+          "reduction_percent": 20.52
+        },
+        "matched_continuation_token_ids": 1024,
+        "first_cold_encode_seconds": 61.378,
+        "wake_ms": {
+          "minimum_approximately": 317,
+          "maximum_approximately": 319
+        }
+      },
+      "reconstruction": "state and 1,024 continuation token IDs exact relative to the selected Q4 baseline",
+      "boundaries": [
+        "Storage saving applies to the sleeping session's backing; native Q4 state returns to GPU memory on wake.",
+        "The first cold encode took 61.378 s; the wake figures are a separate measurement."
+      ]
+    },
+    {
+      "id": "PTKV-FP8-REPEAT-20260922",
+      "direction": "PTKV / KV cache",
+      "label": "Repeated hibernate/wake after context growth",
+      "date": "2026-09-22",
+      "date_basis": "date stated in the retained benchmark report",
+      "evidence": {
+        "kind": "author_retained_reviewed",
+        "independent_replication": false,
+        "basis": "retained benchmark outcomes selected from a reviewed retained evidence registry",
+        "new_run_for_this_portfolio": false
+      },
+      "scope": {
+        "model": "Qwen3.5-0.8B",
+        "initial_context_tokens": 260000,
+        "additional_tokens_before_sleep": 1000,
+        "additional_tokens_after_wake": 1000,
+        "reference_state": "already-selected FP8 cache representation",
+        "gpu": "RTX 5070",
+        "comparison": "previous own version on the same repeated-session workload"
+      },
+      "measurements": {
+        "repeat_hibernate_wake_ms": {
+          "baseline": 1681.55,
+          "candidate": 637.85,
+          "baseline_over_candidate": 2.64
+        },
+        "candidate_hibernate_ms": 302.36,
+        "candidate_wake_ms": 335.49,
+        "process_vram_mib_active_vs_asleep": {
+          "baseline": 5120,
+          "candidate": 3780,
+          "released_mib": 1340
+        },
+        "matching_output_token_ids": 2000
+      },
+      "reconstruction": "2,000 output token IDs exact in the retained session comparison",
+      "boundaries": [
+        "The cycle improvement is against an earlier own version, not an external system.",
+        "This is a repeat after context growth, not the first cold compression.",
+        "The 1,340 MiB release was measured while asleep; active attention memory is not claimed to stay reduced after wake."
+      ]
+    }
+  ]
+}
