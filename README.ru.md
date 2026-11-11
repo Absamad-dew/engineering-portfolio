@@ -8,7 +8,7 @@
 
 | Проект | Инженерная задача | Материалы |
 |---|---|---|
-| **Исследования сжатия** | Изображения, память, текст, 3D, веб-ресурсы, состояние моделей и видео | [Ноябрьские результаты PTC](research/recent-results.ru.md) · [Все исследования](research/README.ru.md) |
+| **Исследования сжатия** | Изображения, память, текст, 3D, веб-ресурсы, состояние моделей и видео | [Выбранные результаты PTC](research/recent-results.ru.md) · [Все исследования](research/README.ru.md) |
 | **Aster** | Автономные продажи, клиентские диалоги и полноценная CRM | [Продукт и системные решения](projects/aster.md) |
 | **Video Studio** | C++20 / D3D12 / NVENC, время жизни кадров, запись и стерео/VR | [Открытая реализация](https://github.com/Absamad-dew/dlss5-video-studio) · [Инженерный обзор](https://github.com/Absamad-dew/dlss5-video-studio/blob/main/ENGINEERING_OVERVIEW_RU.md) · [Сборка и проверки](https://github.com/Absamad-dew/dlss5-video-studio/blob/main/BUILDING.md) |
 | **CoreBroker** | Выделение физических ядер, блокировки ресурсов и координация процессов на Windows | [Разбор системы и записи запусков](projects/corebroker.md) |

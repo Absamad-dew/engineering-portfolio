@@ -4,7 +4,7 @@
 
 I work on **JSON/text compression, neural-network weights, KV-cache state and video**. My focus is the complete operating point: stored bytes, reconstruction or quality, processing cost and memory under a declared workload. The research spans these distinct objects; each keeps its own baseline and acceptance boundary.
 
-[November PTC results](recent-results.md) cover five additional workloads: image quality versus AVIF, live browser memory, conversation archives, geometry and textures, and web resources.
+[Selected PTC results](recent-results.md) cover Simbol on CLIC 2025, PTC Web and JSON Max against standard codecs, live Chrome memory, 3D and random access to conversations.
 
 | Direction | Selected measured result | Technical brief |
 |---|---|---|

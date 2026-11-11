@@ -8,7 +8,7 @@ Products, systems and original research by **Absamad Manturov**, with eight year
 
 | Project | Engineering focus | Documentation |
 |---|---|---|
-| **Compression R&D** | Codecs and memory research across images, text, 3D, web resources, model state and video | [November PTC results](research/recent-results.md) · [Research index](research/README.md) |
+| **Compression R&D** | Codecs and memory research across images, text, 3D, web resources, model state and video | [Selected PTC results](research/recent-results.md) · [Research index](research/README.md) |
 | **Aster** | Autonomous sales, customer conversations and a full business CRM | [Product and system decisions](projects/aster.md) |
 | **Video Studio** | C++20 / D3D12 / NVENC, frame ownership, recording and stereo/VR | [Public implementation](https://github.com/Absamad-dew/dlss5-video-studio) · [Engineering overview](https://github.com/Absamad-dew/dlss5-video-studio/blob/main/ENGINEERING_OVERVIEW.md) · [Build and verification](https://github.com/Absamad-dew/dlss5-video-studio/blob/main/BUILDING.md) |
 | **CoreBroker** | Physical-core allocation, resource locks and process coordination on Windows | [System case and recorded observations](projects/corebroker.md) |
