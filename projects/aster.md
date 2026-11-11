@@ -1,8 +1,10 @@
 # Aster: sales conversations connected to business operations
 
+[Русский](aster.ru.md) · [Portfolio](../README.md)
+
 Aster lets a service business answer customer questions, collect a brief, create orders and invoices, and manage bookings in the same system its staff use to run the business. The owner can work through an assistant or open the full CRM; routine operations can proceed autonomously, with exceptional commercial decisions assigned to people.
 
-**My role:** product definition, system design, integration and acceptance of agent-assisted implementation.
+**My role.** I defined what the agent could do, when it should hand a request to staff, and which records would prove completion. I directed agent-assisted implementation, integrated the components, and verified the behavior against saved CRM records.
 
 ## 1. A customer request becomes an order and invoice
 
@@ -44,6 +46,8 @@ The retained v0.55 scenario run exercised the lifecycle beyond an initial sale:
 I use agents for implementation and investigation; I own the product behavior, system boundaries, integration and the decision to accept a result.
 
 The central acceptance question is whether the business records match the conversation. In the v0.55 verification, all **40 existing presentation conversations** were completed and read back through the authorized API, with an actual model response in every conversation. Failed intermediate turns remained in the history after successful continuation. Delivery claims also remain tied to receipts: an earlier invoice handoff cannot justify claiming a new delivery.
+
+In a separate model-response check, a complex sales question led the model to produce fields outside the response schema. The server rejected the response. I clarified the expected format and reran the case with strict validation. The corrected action opened the sales view. [Model response validation](../docs/aster-verification.md#model-response-validation)
 
 The same work covered tenant and staff access boundaries, history preservation and the customer interface at desktop and mobile widths. [Verification scope and selected results](../docs/aster-verification.md) keep the build-specific evidence separate from the product walkthrough.
 

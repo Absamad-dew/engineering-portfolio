@@ -1,6 +1,6 @@
 # Aster: verification behind the product walkthrough
 
-The [Aster case](../projects/aster.md) presents business behavior and actual application captures. The figures below refer to the retained **0.55.0** verification, build `122e6f02e626fe68`; screenshots show the earlier **0.54** presentation interface.
+The [Aster case](../projects/aster.md) presents business behavior and actual application captures. The end-to-end figures refer to the retained **0.55.0** verification, build `122e6f02e626fe68`; screenshots show the earlier **0.54** presentation interface.
 
 ## End-to-end observations
 
@@ -30,4 +30,8 @@ The retained regression record reports **1,208 passing Python tests, one skip an
 
 The application ran locally with synthetic business records. External business channels and bank events were local adapters. No real customer, payment charge or physical microphone participated. Fresh installation of an archived copy was outside this verification set. Source code, runtime databases and raw provider requests remain private.
 
-[Evidence and media provenance](evidence.md) · [Aster walkthrough](../projects/aster.md)
+## Model response validation
+
+A separate **0.28** test used a complex sales question that went through an isolated model call. The initial response contained fields outside the expected schema and was rejected. The model instructions were updated to specify the expected format and the strict server-side checks stayed in effect. In the repeat run, the model returned a valid request and the sales view opened before the final text response. This exercise used synthetic CRM records.
+
+[Evidence and media provenance](evidence.md) · [Aster walkthrough](../projects/aster.md) · [Кейс по-русски](../projects/aster.ru.md)
