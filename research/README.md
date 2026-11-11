@@ -4,6 +4,8 @@
 
 I work on **JSON/text compression, neural-network weights, KV-cache state and video**. My focus is the complete operating point: stored bytes, reconstruction or quality, processing cost and memory under a declared workload. The research spans these distinct objects; each keeps its own baseline and acceptance boundary.
 
+[November PTC results](recent-results.md) cover five additional workloads: image quality versus AVIF, live browser memory, conversation archives, geometry and textures, and web resources.
+
 | Direction | Selected measured result | Technical brief |
 |---|---|---|
 | **PTC / structured text** | 48 JSON: **9,235,511 B vs XZ-9 11,380,780 B (−18.85%)**, exact checks 48/48; separate small-input Max/Fast points | [Size, speed and input scope](ptc.md) |
